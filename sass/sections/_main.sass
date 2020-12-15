@@ -1,0 +1,173 @@
+.main
+  background-color: $dark-bgcolor
+  padding: 27px 0
+  max-height: 418px
+  margin-top: -1px
+.tabs
+  display: flex
+  border-radius: 10px
+  overflow: hidden
+  &-triggers
+    display: flex
+    flex-direction: column
+    &__title
+      min-height: 58px !important
+      padding: 0 25px
+      text-align: center
+      display: flex
+      align-items: center
+    &__item
+      display: flex
+      flex-direction: column
+      color: $dark-bgcolor
+      padding: 18px 25px
+      text-decoration: none
+      flex-grow: 1
+      &--active
+        background-color: $active-tab !important
+  &-content
+    position: relative
+    order: -1
+    flex-grow: 1
+    height: 570px
+    &::after
+      content: ''
+      position: absolute
+      z-index: 2
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &__item
+      display: none
+      position: relative
+      &--active
+        display: block
+.right
+  min-height: 60px
+  max-width: 223px
+  background-color: $light-text-color
+  &:not(:last-child)
+    border-bottom: 1px solid $tab-border
+
+.recommend
+  font-weight: 750
+  font-size: 14px
+  line-height: 20px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  color: $dark-bgcolor
+
+.tab
+  &-name
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    margin-bottom: 8px
+  &-info
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $right-bgcolor
+  &-img
+    width: 877px
+    height: 570px
+    object-fit: cover
+
+.content
+  &-info
+    width: 50%
+    height: 80%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 5
+    padding: 55px
+    display: flex
+    flex-direction: column
+
+.developer
+  display: flex
+  align-items: center
+  margin-bottom: 150px
+  &-pic
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    object-fit: cover
+    margin-right: 10px
+  &-info
+    display: flex
+    flex-direction: column
+  &-name
+    margin-bottom: 2px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $light-text-color
+    opacity: 0.85
+  &-job
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light-text-color
+    opacity: 0.4
+
+.description
+  display: flex
+  flex-direction: column
+
+.stack
+  &-name
+    margin-bottom: 20px
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $tab-stack
+  &-topic
+    font-family: Roboto Slab
+    font-style: normal
+    margin-bottom: 46px
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $light-text-color
+
+.more
+  display: flex
+  align-items: center
+  background-color: $tab-stack
+  padding: 11px 20px
+  max-width: 114px
+  min-height: 20px
+  border-radius: 20px
+  &-info
+    margin-right: 5px
+    font-weight: 800
+    font-size: 12px
+    line-height: 20px
+    color: $light-text-color
+  &-pic
+    width: 20px
+
+.css
+  color: $css-color
+.js
+  color: $js-color
+.html
+  color: $html-color
+.web
+  color: $web-color
+.css-another
+  color: $css-another-color
+
+.next
+  background-color: #E5E5E5
+  padding: 140px

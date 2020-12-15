@@ -1,0 +1,90 @@
+.header
+  background-color: $dark-bgcolor
+  padding: 15px 0
+  &-container
+    display: flex
+    align-items: center
+    &_mobile
+      display: none
+    &__item
+      &-link
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $light-text-color
+.wrapper
+  max-width: 1140px
+  margin: 0 auto
+.logo
+  display: flex
+  align-items: center
+  padding: 0
+  margin: 0
+  &-name
+    font-size: 26px !important
+    margin-left: 10px
+.navbar
+  list-style: none
+  margin: 0 91px
+  padding: 0
+  display: flex
+  width: 48%
+  justify-content: space-between
+  &__item
+    &:last-child
+      display: none
+    &-link
+      font-weight: 700
+      font-size: 14px
+      line-height: 20px
+      text-align: right
+      color: $light-text-color
+  &-tablet
+    &__item
+      &-link
+        display: block
+        background-color: $link-color
+        padding: 5px 10px
+        width: 100%
+        font-weight: 700
+        font-size: 14px
+        line-height: 20px
+        text-align: left
+        color: $light-text-color
+
+#search-form-input
+  position: relative
+  width: 263px
+  height: 39px
+  font-size: 14px
+  line-height: 20px
+  font-weight: normal
+  padding: 9px 35px 10px 25px
+  background-color: $input-bgcolor
+  border: none
+  border-radius: 10px
+
+.search
+  &-form
+    position: relative
+  &-icon
+    padding: 0
+    position: absolute
+    top: 9px
+    right: 24px
+    z-index: 1
+    width: 20px
+    cursor: pointer
+    background-color: transparent
+    border: none
+    &-mobile
+      display: none
+
+.menu
+  &-arrow
+    width: 20px
+    display: inline-block
+    vertical-align: middle
+  &-s
+    display: none
