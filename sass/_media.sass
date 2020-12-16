@@ -13,6 +13,22 @@
       width: 75%
   .developer
     margin-bottom: 110px
+  .right
+    min-width: 255px
+  .useful
+    &-container
+      &__item
+        &:not(:last-child):after
+          margin: 0 15px
+    &-wrapper
+      padding: 30px 15px 35px
+    &-info
+      font-size: 12px
+      margin-right: 10px
+    &-img
+      height: 55px
+      width: 55px
+
 @media (max-width:  1024px)
   .wrapper
     max-width: 90%
@@ -48,6 +64,11 @@
     &-topic
       font-size: 36px
       line-height: 40px
+  .right
+    min-width: 250px
+  .content
+    &-info
+      width: 80%
 
 @media (max-width:  992px)
   .wrapper
@@ -87,7 +108,7 @@
     flex-direction: column
     position: relative
     &-content
-      height: 450px
+      height: 435px
     &-triggers
       flex-direction: row
       position: absolute
@@ -99,42 +120,96 @@
       &__item
         min-height: 20px
         padding: 25px
+        text-align: center
         &:not(:last-child)
           border: none
           border-right: 1px solid $tab-border
   .main
     max-height: 280px
+  .right
+    min-width: 123px
   .tab
     &-name
       margin-bottom: 0
     &-img
       width: 100%
-      height: 380px
+      height: 372px
     &-info
       display: none
   .developer
     margin-bottom: 65px
-  .content
-    &-info
-      width: 60%
-      height: 55%
   .stack
     &-topic
       font-size: 30px
       line-height: 32px
       margin-bottom: 35px
-  .more
-    padding: 8px 15px
-    max-width: 100px
-    min-height: 16px
+  .content
     &-info
-      font-weight: 550
-    &-pic
-      width: 15px
+      width: 65%
+      padding: 35px
+  .more
+    padding: 10px 20px
+  .useful
+    &-wrapper
+      padding: 0
+    &-container
+      display: none
+      &__item
+        max-width: 240px
+        min-height: 65px
+        display: flex
+        align-items: center
+        &::after
+          content: ''
+          width: 1px
+          height: 75px !important
+          display: inline-block
+          vertical-align: middle
+          margin: 0 10px
+          background-color: $right-bgcolor
+    &-img
+      width: 40px
+      height: 40px
+    &-info
+      font-size: 12px
+      font-weight: 500
+  .swiper
+    &-container
+      display: block
 
 @media (max-width:  767px)
   .wrapper
     max-width: 620px
+  .right
+    min-width: 120px
+  .swiper
+    &-useful
+      &-container
+        flex-flow: column nowrap
+  .useful
+    &-container
+      &__item
+        max-width: 100%
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 35px
+        &::after
+          content: ''
+          position: absolute
+          width: 100% !important
+          height: 1px !important
+          display: unset
+          vertical-align: unset
+          bottom: 0
+          margin: 0
+          background-color: $right-bgcolor
+    &-info
+      font-size: 14px
+    &-img
+      width: 60px
+      height: 60px
 
 @media (max-width:  680px)
   .wrapper
@@ -214,25 +289,41 @@
     &-icon
       display: block
       right: 12px
-
   .main
     margin-top: 65px
-
+  .right
+    min-width: 100px
+  .tabs
+    &-content
+      height: 455px
+  .tab
+    &-img
+      height: 377px
+    &-name
+      text-align: center
+  .content
+    &-info
+      width: 75%
+  .useful
+    padding: 230px 0
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
-
+  .right
+    min-width: 90px
   .content
     &-info
-      width: 70%
-      height: 73%
+      width: 90%
+      height: 99%
       padding: 45px
   .tabs
     &-content
-      height: 440px
+      height: 425px
     &-triggers
       &__item
-        padding: 20px
+        padding: 10px 7px
+  .useful
+    padding: 200px 0
 
 @media (max-width:  480px)
   .wrapper
@@ -257,16 +348,21 @@
     &-triggers
       &__item
         padding: 15px 10px
+  .right
+    min-width: 52px
+    padding: 20px 0
   .content
     &-info
-      width: 70%
-      height: 70%
+      width: 90%
+      height: 90%
       padding: 30px
   .stack
     &-topic
       font-size: 22px
       line-height: 26px
       margin-bottom: 30px
+  .useful
+    padding: 195px 0
 
 @media (max-width:  365px)
   .wrapper
@@ -274,20 +370,32 @@
   .tab
     &-img
       height: 332px
+    &-name
+      font-size: 10px
   .main
     max-height: 255px
   .tabs
     &-content
-      height: 380px
-    &-triggers
-      &__item
-        padding: 10px 7px
+      height: 375px
+  .right
+    min-width: 45px
+    padding: 15px 0
   .content
     &-info
-      width: 85%
+      width: 98%
       padding: 20px
   .developer
     margin-bottom: 55px
+  .useful
+    padding: 165px 0
+    &-container
+      &__item
+        padding: 20px
+    &-info
+      font-size: 13px
+    &-img
+      width: 55px
+      height: 55px
 
 @media screen and (min-width: 301px) and (max-width: 780px) and (orientation: landscape)
   .navbar

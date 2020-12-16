@@ -25,4 +25,67 @@ $(document).ready(function () {
 
   $('.tabs-triggers__item:first').click();
 
+    function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 766 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }  
+
+   var reviewsSwiper = new Swiper('.reviews-slider', {
+    // Optional parameters 
+    loop: true,
+    direction: getDirection(),
+    slidesPerView: 3,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+    },
+    on: {
+        resize: function () {
+          reviewsSwiper.changeDirection(getDirection());
+        }
+      },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-slide-next',
+      prevEl: '.reviews-slide-prev',
+    },
+
+    keyboard: {
+      enabled: true,
+    },
   });
+  $('.reviews-slider').on({
+    mouseenter: function () {
+      reviewsSwiper.autoplay.stop();
+    },
+    mouseleave: function () {
+      reviewsSwiper.autoplay.start();
+    }
+  });
+
+  });
+
+  // var mySwiper = new Swiper('.swiper-container', {
+  //   // Optional parameters
+  //   loop: true,
+
+  //   // If we need pagination
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+
+  //   // And if we need scrollbar
+  //   scrollbar: {
+  //     el: '.swiper-scrollbar',
+  //   },
+  // });
