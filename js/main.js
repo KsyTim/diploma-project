@@ -32,7 +32,7 @@ $(document).ready(function () {
     return direction;
   }  
 
-   var reviewsSwiper = new Swiper('.reviews-slider', {
+   var usefulSwiper = new Swiper('.useful-slider', {
     // Optional parameters 
     loop: true,
     direction: getDirection(),
@@ -44,26 +44,20 @@ $(document).ready(function () {
     },
     on: {
         resize: function () {
-          reviewsSwiper.changeDirection(getDirection());
+          usefulSwiper.changeDirection(getDirection());
         }
       },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.reviews-slide-next',
-      prevEl: '.reviews-slide-prev',
-    },
 
     keyboard: {
       enabled: true,
     },
   });
-  $('.reviews-slider').on({
+  $('.useful-slider').on({
     mouseenter: function () {
-      reviewsSwiper.autoplay.stop();
+      usefulSwiper.autoplay.stop();
     },
     mouseleave: function () {
-      reviewsSwiper.autoplay.start();
+      usefulSwiper.autoplay.start();
     }
   });
 

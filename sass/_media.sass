@@ -28,6 +28,56 @@
     &-img
       height: 55px
       width: 55px
+  .grid
+    &-container
+      grid-gap: 10px
+      &__item
+        font-size: 12px
+        line-height: 18px
+    &-socials
+      &-pic
+        width: 45px
+        height: 45px
+        &_twitter
+          margin: 0 10px
+  .article
+    padding: 15px 0 3px 35px
+    &::after
+      bottom: 18%
+  .top
+    margin-bottom: 0
+    &-pic
+      width: 240px
+      height: 265px
+  .roboto
+    &-title
+      font-size: 16px
+      line-height: 26px
+  .popular
+    &-pic
+      width: 233px
+    &-container
+      padding: 15px
+    &-info
+      margin-top: 105px
+    &-theme
+      font-size: 12px !important
+  .card
+    &-date
+      font-size: 10px
+  .download
+    &-title
+      font-size: 14px
+  .tags
+    padding: 20px 12px 10px 15px
+    &-title
+      margin: 0 0 30px
+    &-link
+      margin: 0 8px 8px 0
+  .tools
+    &-pic
+      width: 235px
+      height: 245px
 
 @media (max-width:  1024px)
   .wrapper
@@ -154,7 +204,7 @@
       padding: 0
     &-container
       display: none
-      &__item
+      &_item
         max-width: 240px
         min-height: 65px
         display: flex
@@ -188,7 +238,7 @@
         flex-flow: column nowrap
   .useful
     &-container
-      &__item
+      &_item
         max-width: 100%
         min-height: 100%
         display: flex
@@ -305,7 +355,7 @@
     &-info
       width: 75%
   .useful
-    padding: 230px 0
+    padding: 230px 0 30px
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
@@ -323,7 +373,7 @@
       &__item
         padding: 10px 7px
   .useful
-    padding: 200px 0
+    padding: 200px 0 30px
 
 @media (max-width:  480px)
   .wrapper
@@ -362,7 +412,7 @@
       line-height: 26px
       margin-bottom: 30px
   .useful
-    padding: 195px 0
+    padding: 195px 0 30px
 
 @media (max-width:  365px)
   .wrapper
@@ -387,9 +437,9 @@
   .developer
     margin-bottom: 55px
   .useful
-    padding: 165px 0
+    padding: 165px 0 30px
     &-container
-      &__item
+      &_item
         padding: 20px
     &-info
       font-size: 13px
