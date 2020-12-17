@@ -439,6 +439,7 @@ template {
   background-color: #656B70;
   border: none;
   border-radius: 10px;
+  outline: none;
 }
 
 .search-form {
@@ -455,6 +456,7 @@ template {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .search-icon-mobile {
@@ -1222,6 +1224,10 @@ template {
   margin-right: 5px;
 }
 
+.comments-hide_pic {
+  display: none;
+}
+
 .likes-light {
   display: flex;
   align-items: center;
@@ -1391,6 +1397,53 @@ template {
   .content-info {
     width: 80%;
   }
+  .grid-container__item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .roboto-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .top {
+    margin-bottom: -5px;
+  }
+  .article {
+    padding: 15px 0 3px 25px;
+  }
+  .article-author-name {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lucky {
+    padding: 27px 20px 16px;
+  }
+  .stress {
+    padding: 27px 20px 16px;
+  }
+  .customer {
+    padding: 27px 20px 16px;
+  }
+  .free {
+    padding: 27px 20px 16px;
+  }
+  .tags::before {
+    top: 15%;
+  }
+  .tags-title {
+    margin: 0 0 15px;
+  }
+  .tags-sub {
+    width: 200px;
+  }
+  .popular-container {
+    padding: 20px 10px;
+  }
+  .popular-author-pic {
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1464,7 +1517,7 @@ template {
     min-width: 123px;
   }
   .tab-name {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
   .tab-img {
     width: 100%;
@@ -1519,6 +1572,176 @@ template {
   }
   .swiper-container {
     display: block;
+  }
+  .grid-container {
+    grid-gap: 30px;
+    grid-template: repeat(7, min-content)/repeat(2, 1fr);
+    grid-template-areas: "article popular" "article popular" "download tags" "lucky tags" "customer stress" "tools free" "tools socials";
+  }
+  .grid-container__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .grid-socials-pic {
+    width: 50px;
+    height: 50px;
+  }
+  .grid-socials-pic_twitter {
+    margin: 0 20px;
+  }
+  .roboto-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .article {
+    padding: 15px 0 13px 20px;
+    position: relative;
+  }
+  .article::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+  }
+  .article-author-text {
+    margin-right: 5px;
+  }
+  .article-author-name {
+    width: 186px;
+    color: #fff;
+    opacity: 0.75;
+  }
+  .article-author-extra {
+    color: #fff;
+    opacity: 0.75;
+  }
+  .popular-pic {
+    width: 100%;
+  }
+  .popular-theme {
+    font-size: 16px !important;
+    margin: 0 0 55px;
+  }
+  .popular-container {
+    padding: 19px 8px 20px 15px;
+  }
+  .popular-author-container {
+    display: flex;
+    align-items: center;
+  }
+  .popular-author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .popular-author-extra {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .download {
+    padding: 47px 25px 0;
+  }
+  .download::after {
+    bottom: 31%;
+  }
+  .download-sub {
+    margin: 50px 0 0;
+  }
+  .tags {
+    padding: 20px 18px 10px 25px;
+  }
+  .tags::before {
+    top: 13%;
+  }
+  .tags-title {
+    margin: 0 0 46px;
+  }
+  .tags-link {
+    margin: 0 8px 12px 0;
+  }
+  .tools-pic {
+    width: 100%;
+    height: 80%;
+  }
+  .tools-container {
+    padding: 15px 25px 16px;
+  }
+  .lucky {
+    padding: 27px 25px 16px;
+  }
+  .stress {
+    padding: 27px 25px 16px;
+  }
+  .customer {
+    padding: 27px 25px 16px;
+  }
+  .customer .card-text {
+    margin: 0 0 25px !important;
+  }
+  .free {
+    padding: 27px 25px 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .socials {
+    padding: 22px 25px 30px;
+  }
+  .socials-title {
+    margin: 0 0 25px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .top {
+    margin-bottom: 15px;
+  }
+  .top-info {
+    position: absolute;
+    z-index: 6;
+  }
+  .top-pic {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 10%;
+    width: 292px;
+    height: 80%;
+  }
+  .sub {
+    position: absolute;
+    z-index: 6;
+    bottom: 5%;
+    left: 5%;
+  }
+  .card-date {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .info-direction {
+    color: #4B6470;
+  }
+  .info-title {
+    color: #fff;
+  }
+  .info-text {
+    color: #fff;
+    opacity: 0.75;
+  }
+  .comments-dark_pic {
+    display: none;
+  }
+  .comments-dark_amount {
+    color: #fff;
+    opacity: 0.75;
+  }
+  .comments-hide_pic {
+    display: block;
+    margin-right: 5px;
   }
 }
 
@@ -1643,6 +1866,7 @@ template {
     background-color: #656B70;
     border: none;
     border-radius: 10px;
+    outline: none;
   }
   .search-icon {
     display: block;
@@ -1669,6 +1893,12 @@ template {
   .useful {
     padding: 230px 0 30px;
   }
+  .download {
+    padding: 47px 25px 25px;
+  }
+  .popular-info {
+    margin-top: 45px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -1691,6 +1921,40 @@ template {
   }
   .useful {
     padding: 200px 0 30px;
+  }
+  .grid-container {
+    grid-gap: 15px;
+    grid-template: repeat(8, min-content)/repeat(2, 1fr);
+    grid-template-areas: "article article" "article article" "download tags" "popular tags" "popular lucky" "customer free" "stress tools" "socials tools";
+  }
+  .grid-socials-pic {
+    width: 35px;
+    height: 35px;
+  }
+  .grid-socials-pic_twitter {
+    margin: 0 10px;
+  }
+  .tags {
+    padding: 20px 10px 10px 10px;
+  }
+  .tags::before {
+    top: 15%;
+  }
+  .tags-title {
+    margin: 0 0 50px;
+  }
+  .popular-container {
+    padding: 19px 5px 20px 9px;
+  }
+  .popular-info {
+    margin-top: 95px;
+  }
+  .card-date {
+    font-size: 10px;
+  }
+  .article {
+    max-width: 100%;
+    min-height: 370px;
   }
 }
 
@@ -1737,6 +2001,75 @@ template {
   .useful {
     padding: 195px 0 30px;
   }
+  .grid-container {
+    grid-gap: 10px;
+    grid-template: repeat(8, min-content)/repeat(2, 1fr);
+    grid-template-areas: "article article" "article article" "download download" "popular popular" "customer free" "stress lucky" "tools tools" "socials tags";
+  }
+  .grid-container__item {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tools-pic {
+    height: 80%;
+  }
+  .roboto-title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .lucky > .card-text {
+    margin-bottom: 23px;
+  }
+  .download::after {
+    bottom: 28%;
+  }
+  .tags {
+    max-height: 150px;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+  .tags::before {
+    top: 33%;
+  }
+  .tags-link {
+    margin: 0 50px 12px 0;
+  }
+  .tags-title {
+    margin: 0 0 30px;
+  }
+  .popular-container {
+    padding: 35px 25px;
+  }
+  .popular-info {
+    margin-top: 150px;
+  }
+  .popular-theme {
+    margin: 0 0 65px;
+  }
+  .popular-author-pic {
+    margin-right: 20px;
+  }
+  .popular-author-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .popular-author-date {
+    font-size: 14px;
+  }
+  .info-title {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .info-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .article-author-pic {
+    margin-right: 20px;
+  }
+  .article-author-name {
+    margin-right: 15px;
+  }
 }
 
 @media (max-width: 365px) {
@@ -1778,6 +2111,33 @@ template {
   .useful-img {
     width: 55px;
     height: 55px;
+  }
+  .grid-container {
+    grid-gap: 10px;
+    grid-template: repeat(10, min-content)/1fr;
+    grid-template-areas: "article" "download" "popular" "customer" "free" "tags" "stress" "lucky" "tools" "socials";
+  }
+  .tags {
+    padding: 20px 35px;
+  }
+  .tags-link {
+    margin: 0 15px 12px 0;
+  }
+  .popular-info {
+    margin-top: 60px;
+  }
+  .popular-author-pic {
+    margin-right: 15px;
+  }
+  .article-author-name {
+    width: 165px;
+    margin-right: 0;
+  }
+  .article-author-pic {
+    margin-right: 10px;
+  }
+  .download::after {
+    bottom: 30%;
   }
 }
 

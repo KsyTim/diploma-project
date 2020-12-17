@@ -119,7 +119,46 @@
   .content
     &-info
       width: 80%
-
+  .grid
+    &-container
+      &__item
+        font-size: 12px
+        line-height: 18px
+  .roboto
+    &-title
+      font-size: 15px
+      line-height: 20px
+  .top
+    margin-bottom: -5px
+  .article
+    padding: 15px 0 3px 25px
+    &-author
+      &-name
+        width: 300px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+  .lucky
+    padding: 27px 20px 16px
+  .stress
+    padding: 27px 20px 16px
+  .customer
+    padding: 27px 20px 16px
+  .free
+    padding: 27px 20px 16px
+  .tags
+    &::before
+      top: 15%
+    &-title
+      margin: 0 0 15px
+    &-sub
+      width: 200px
+  .popular
+    &-container
+      padding: 20px 10px
+    &-author
+      &-pic
+        margin-right: 5px
 @media (max-width:  992px)
   .wrapper
     max-width: 80%
@@ -180,7 +219,7 @@
     min-width: 123px
   .tab
     &-name
-      margin-bottom: 0
+      margin-bottom: 15px
     &-img
       width: 100%
       height: 372px
@@ -226,6 +265,146 @@
   .swiper
     &-container
       display: block
+  .grid
+    &-container
+      grid-gap: 30px
+      grid-template: repeat(7, min-content) / repeat(2, 1fr)
+      grid-template-areas: "article popular" "article popular" "download tags" "lucky tags" "customer stress" "tools free" "tools socials"
+      &__item
+        font-size: 14px
+        line-height: 20px
+    &-socials
+      &-pic
+        width: 50px
+        height: 50px
+        &_twitter
+          margin: 0 20px
+  .roboto
+    &-title
+      font-weight: bold
+      font-size: 18px
+      line-height: 20px
+  .article
+    padding: 15px 0 13px 20px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      z-index: 5
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &-author
+      &-text
+        margin-right: 5px
+      &-name
+        width: 186px
+        color: $light-text-color
+        opacity: 0.75
+      &-extra
+        color: $light-text-color
+        opacity: 0.75
+  .popular
+    &-pic
+      width: 100%
+    &-theme
+      font-size: 16px !important
+      margin: 0 0 55px
+    &-container
+      padding: 19px 8px 20px 15px
+    &-author
+      &-container
+        display: flex
+        align-items: center
+      &-info
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+      &-extra
+        font-size: 12px
+        line-height: 15px
+  .download
+    padding: 47px 25px 0
+    &::after
+      bottom: 31%
+    &-sub
+      margin: 50px 0 0
+  .tags
+    padding: 20px 18px 10px 25px
+    &::before
+      top: 13%
+    &-title
+      margin: 0 0 46px
+    &-link
+      margin: 0 8px 12px 0
+  .tools
+    &-pic
+      width: 100%
+      height: 80%
+    &-container
+      padding: 15px 25px 16px
+  .lucky
+    padding: 27px 25px 16px
+  .stress
+    padding: 27px 25px 16px
+  .customer
+    padding: 27px 25px 16px
+    .card
+      &-text
+        margin: 0 0 25px !important
+  .free
+    padding: 27px 25px 16px
+    display: flex
+    justify-content: center
+    flex-direction: column
+  .socials
+    padding: 22px 25px 30px
+    &-title
+      margin: 0 0 25px
+      font-size: 20px
+      line-height: 25px
+  .top
+    margin-bottom: 15px
+    &-info
+      position: absolute
+      z-index: 6
+    &-pic
+      position: absolute
+      z-index: 0
+      right: 0
+      top: 10%
+      width: 292px
+      height: 80%
+  .sub
+    position: absolute
+    z-index: 6
+    bottom: 5%
+    left: 5%
+  .card
+    &-date
+      font-size: 12px
+      line-height: 15px
+  .info
+    &-direction
+      color: #4B6470
+    &-title
+      color: $light-text-color
+    &-text
+      color: $light-text-color
+      opacity: 0.75
+  .comments
+    &-dark
+      &_pic
+        display: none
+      &_amount
+        color: $light-text-color
+        opacity: 0.75
+    &-hide
+      &_pic
+        display: block
+        margin-right: 5px
 
 @media (max-width:  767px)
   .wrapper
@@ -336,6 +515,7 @@
       background-color: $input-bgcolor
       border: none
       border-radius: 10px
+      outline: none
     &-icon
       display: block
       right: 12px
@@ -356,6 +536,11 @@
       width: 75%
   .useful
     padding: 230px 0 30px
+  .download
+    padding: 47px 25px 25px
+  .popular
+    &-info
+      margin-top: 45px
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
@@ -374,6 +559,34 @@
         padding: 10px 7px
   .useful
     padding: 200px 0 30px
+  .grid
+    &-container
+      grid-gap: 15px
+      grid-template: repeat(8, min-content) / repeat(2, 1fr)
+      grid-template-areas: "article article" "article article" "download tags" "popular tags" "popular lucky" "customer free" "stress tools" "socials tools"
+    &-socials
+      &-pic
+        width: 35px
+        height: 35px
+        &_twitter
+          margin: 0 10px
+  .tags
+    padding: 20px 10px 10px 10px
+    &::before
+      top: 15%
+    &-title
+      margin: 0 0 50px
+  .popular
+    &-container
+      padding: 19px 5px 20px 9px
+    &-info
+      margin-top: 95px
+  .card
+    &-date
+      font-size: 10px
+  .article
+    max-width: 100%
+    min-height: 370px
 
 @media (max-width:  480px)
   .wrapper
@@ -413,6 +626,64 @@
       margin-bottom: 30px
   .useful
     padding: 195px 0 30px
+  .grid
+    &-container
+      grid-gap: 10px
+      grid-template: repeat(8, min-content) / repeat(2, 1fr)
+      grid-template-areas: "article article" "article article" "download download" "popular popular" "customer free" "stress lucky" "tools tools" "socials tags"
+      &__item
+        font-size: 12px
+        line-height: 16px
+  .tools
+    &-pic
+      height: 80%
+  .roboto
+    &-title
+      font-size: 15px
+      line-height: 18px
+  .lucky > .card-text
+    margin-bottom: 23px
+  .download
+    &::after
+      bottom: 28%
+  .tags
+    max-height: 150px
+    overflow-y: scroll
+    padding: 20px
+    &::before
+      top: 33%
+    &-link
+      margin: 0 50px 12px 0
+    &-title
+      margin: 0 0 30px
+  .popular
+    &-container
+      padding: 35px 25px
+    &-info
+      margin-top: 150px
+    &-theme
+      margin: 0 0 65px
+    &-author
+      &-pic
+        margin-right: 20px
+      &-name
+        font-size: 14px
+        margin-bottom: 5px
+      &-date
+        font-size: 14px
+  .info
+    &-title
+      font-size: 21px
+      line-height: 25px
+    &-text
+      font-size: 14px
+      line-height: 18px
+  .article
+    &-author
+      &-pic
+        margin-right: 20px
+      &-name
+        margin-right: 15px
 
 @media (max-width:  365px)
   .wrapper
@@ -446,7 +717,31 @@
     &-img
       width: 55px
       height: 55px
-
+  .grid
+    &-container
+      grid-gap: 10px
+      grid-template: repeat(10, min-content) / 1fr
+      grid-template-areas: "article" "download" "popular" "customer" "free" "tags" "stress" "lucky" "tools" "socials"
+  .tags
+    padding: 20px 35px
+    &-link
+      margin: 0 15px 12px 0
+  .popular
+    &-info
+      margin-top: 60px
+    &-author
+      &-pic
+        margin-right: 15px
+  .article
+    &-author
+      &-name
+        width: 165px
+        margin-right: 0
+      &-pic
+        margin-right: 10px
+  .download
+    &::after
+      bottom: 30%
 @media screen and (min-width: 301px) and (max-width: 780px) and (orientation: landscape)
   .navbar
     width: 100%
