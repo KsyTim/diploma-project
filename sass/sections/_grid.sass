@@ -1,5 +1,5 @@
 .grid
-  padding: 0 0 60px
+  padding: 0 0 61px
   background-color: $light-bgcolor
   &-title
     display: none
@@ -21,6 +21,7 @@
       width: 50px
       height: 50px
       object-fit: cover
+      border-radius: 50%
       overflow: hidden
       &_twitter
         margin: 0 20px
@@ -154,6 +155,7 @@
     margin: 0
     background-color: $download-divider
   &-title
+    display: block
     margin: 0 0 10px
     position: relative
     z-index: 5
@@ -203,9 +205,10 @@
   &-title
     letter-spacing: 0.5px
     text-transform: uppercase
-    margin: 0 0 46px
     font-weight: 600
     font-size: 14px
+  &-top
+    margin: 0 0 46px
   &-sub
     display: flex
     flex-flow: row wrap
@@ -222,7 +225,8 @@
     height: 275px
     object-fit: cover
   &-container
-    padding: 15px 25px 16px
+    width: 84%
+    padding: 10px 25px 30px
   &-title
     max-width: 210px
     margin: 0 0 10px
@@ -230,30 +234,34 @@
     +grid-common-title
 .lucky
   grid-area: lucky
-  padding: 27px 25px 16px
+  padding: 32px 25px 16px
   &-title
-    margin: 0 0 5px
+    display: block
+    margin: -5px 0 5px
     +grid-common-title
 .stress
   grid-area: stress
-  padding: 27px 25px 16px
+  padding: 32px 25px 16px
   &-title
-    margin: 0 0 5px
+    display: block
+    margin: -5px 0 5px
     +grid-common-title
 .customer
   grid-area: customer
-  padding: 27px 25px 16px
+  padding: 32px 25px 16px
   &-title
-    margin: 0 0 5px
+    display: block
+    margin: -5px 0 5px
     +grid-common-title
   .card
     &-text
       margin: 0 0 25px !important
 .free
   grid-area: free
-  padding: 27px 25px 16px
+  padding: 32px 25px 16px
   &-title
-    margin: 0 0 5px
+    display: block
+    margin: -5px 0 5px
     +grid-common-title
 .socials
   grid-area: socials
