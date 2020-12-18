@@ -37,7 +37,7 @@ $(document).ready(function () {
     loop: true,
     direction: getDirection(),
     slidesPerView: 3,
-    spaceBetween: 0,
+    spaceBetween: 8,
     centeredSlides: true,
     autoplay: {
       delay: 2000,
@@ -61,4 +61,29 @@ $(document).ready(function () {
     }
   });
 
+  var bookmarkOnFirst = $(".bookmark-on-first");
+  bookmarkOnFirst.on("click", function (event) {
+    bookmarkOnFirst.toggleClass("bookmark-off");
   });
+  var bookmarkOnSecond = $(".bookmark-on-second");
+  bookmarkOnSecond.on("click", function (event) {
+    bookmarkOnSecond.toggleClass("bookmark-off");    
+  });
+  $('.bookmark-on-second').click();
+  var bookmarkOnThird = $(".bookmark-on-third");
+  bookmarkOnThird.on("click", function (event) {
+    bookmarkOnThird.toggleClass("bookmark-off");
+  });
+  var bookmarkOnFourth = $(".bookmark-on-fourth");
+  bookmarkOnFourth.on("click", function (event) {
+    bookmarkOnFourth.toggleClass("bookmark-off");
+  });
+  var bookmarkOnFifth = $(".bookmark-on-fifth");
+  bookmarkOnFifth.on("click", function (event) {
+    bookmarkOnFifth.toggleClass("bookmark-off");
+  });
+  var bookmarkOnSixth = $(".bookmark-on-sixth");
+  bookmarkOnSixth.on("click", function (event) {
+    bookmarkOnSixth.toggleClass("bookmark-off");
+  });
+});

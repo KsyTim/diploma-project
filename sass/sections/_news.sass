@@ -1,0 +1,249 @@
+
+.news
+  padding: 60px 0
+  background-color: $light-bgcolor
+  &-container
+    display: flex
+    align-items: flex-start
+  &-directions
+    margin-bottom: 15px
+    font-weight: 550
+  &-title
+    font-size: 20px
+    line-height: 25px
+    font-weight: 700
+    margin-bottom: 10px
+  &-text
+    font-size: 14px
+    line-height: 20px
+    font-weight: 400
+    margin: 0 0 20px
+    color: $right-bgcolor
+  &-info
+    display: flex
+    align-items: center
+  &-comments
+    margin: 0 11px
+  &-end
+    color: $dark-bgcolor
+  &-remote
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 5%
+      right: -1%
+      z-index: 1
+      background: url("../img/pseudo-01.svg") no-repeat
+  &-node
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 5%
+      right: 2%
+      z-index: 1
+      background: url("../img/pseudo-02.svg") no-repeat
+  &-google
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 5%
+      right: 2%
+      z-index: 1
+      background: url("../img/pseudo-03.svg") no-repeat
+  &-ny
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 5%
+      right: 2%
+      z-index: 1
+      background: url("../img/pseudo-04.svg") no-repeat
+  &-parents
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 5%
+      right: 2%
+      z-index: 1
+      background: url("../img/pseudo-05.svg") no-repeat
+  &-fight
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 5%
+      right: -1%
+      z-index: 1
+      background: url("../img/pseudo-06.svg") no-repeat
+  &-marks
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 37px
+      height: 52px
+      top: 4%
+      right: -1%
+      z-index: 1
+      background: url("../img/pseudo-07.svg") no-repeat
+  &-start
+    font-weight: 550
+.main
+  &-news
+    &-container
+      max-width: 848px
+      margin-right: 29px
+      border-radius: 10px
+      overflow: hidden
+    &-card
+      background-color: $light-text-color
+      max-width: 848px
+      min-height: 245px
+      padding: 20px 25px
+      display: flex
+      align-items: center
+      position: relative
+      &:not(:last-child)::after
+        content: ''
+        position: absolute
+        width: 94%
+        height: 1px
+        bottom: 0
+        background-color: $tab-border
+    &-pic
+      width: 336px
+      height: 195px
+      object-fit: cover
+      margin-right: 25px
+    &-info
+      width: 55%
+      display: flex
+      flex-direction: column
+    &-countries
+      align-self: flex-start
+      margin-top: 10px
+      .news
+        &-text
+          margin: 0 0 45px
+.recent
+  &-news
+    &-container
+      max-width: 263px
+      min-height: 700px
+      display: flex
+      flex-direction: column
+      border-radius: 10px
+      overflow: hidden
+      &_mobile
+        display: flex
+        flex-direction: column
+        border-top: 1px solid $tab-border
+        border-bottom: 1px solid $tab-border
+    &-card
+      background-color: $light-text-color
+      max-width: 263px
+      min-height: 95px
+      padding: 15px 25px
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      &:not(:last-child)::after
+        content: ''
+        position: absolute
+        width: 80%
+        height: 1px
+        bottom: 0
+        background-color: $tab-border
+    &-start
+      background-color: $light-text-color
+      max-width: 263px
+      display: flex
+      align-items: center
+      justify-content: center
+      min-height: 59px
+      padding: 20px
+    &-end
+      background-color: $light-text-color
+      max-width: 263px
+      display: flex
+      align-items: center
+      justify-content: center
+      min-height: 45px
+      padding: 10px 14px
+    &-pic
+      width: 60px
+      height: 60px
+      object-fit: cover
+      margin-right: 10px
+    &-text
+      max-width: 143px
+      color: $right-bgcolor
+      font-size: 14px
+      line-height: 20px
+      font-weight: 400
+      margin: 0 0 5px
+    &-info
+      display: flex
+      flex-direction: column
+  &-arrows
+    display: none
+.likes
+  &-dark
+    display: flex
+    align-items: center
+    &_pic
+      width: 15px
+      height: 15px
+      object-fit: cover
+      overflow: hidden
+      margin-right: 5px
+    &_amount
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $comments-color
+.title
+  &-blue
+    color: $tab-stack
+  &-opinion
+    color: $css-color
+  &-hot
+    color: $hot-color
+  &-collections
+    color: $html-color
+
+.bookmark
+  &-on
+    &-first
+      +bookmark-on
+    &-second
+      +bookmark-on
+    &-third
+      +bookmark-on
+    &-fourth
+      +bookmark-on
+    &-fifth
+      +bookmark-on
+    &-sixth
+      +bookmark-on
+  &-off
+    +bookmark-off
