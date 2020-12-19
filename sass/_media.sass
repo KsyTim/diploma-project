@@ -159,6 +159,15 @@
       &-text
         font-size: 12px
         line-height: 18px
+  .readers
+    &-container
+      grid-gap: 20px
+    &-choice
+      width: 470px
+    &-questions
+      width: 470px
+      &-info
+        padding: 35px 25px
 
 @media (max-width:  1024px)
   .wrapper
@@ -370,8 +379,10 @@
       font-weight: 500
       margin-right: 0
   .swiper
-    &-container
-      display: block
+    &-useful
+      &-container
+        display: flex
+        flex-flow: row nowrap
   .grid
     &-container
       grid-gap: 30px
@@ -711,6 +722,7 @@
       &:nth-child(n+4)
         display: block
   .header
+    padding: 18px 0
     position: fixed
     top: 0
     right: 0

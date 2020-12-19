@@ -25,7 +25,7 @@ $(document).ready(function () {
 
   $('.tabs-triggers__item:first').click();
 
-    function getDirection() {
+  function getDirection() {
     var windowWidth = window.innerWidth;
     var direction = window.innerWidth <= 766 ? 'vertical' : 'horizontal';
 
@@ -85,5 +85,35 @@ $(document).ready(function () {
   var bookmarkOnSixth = $(".bookmark-on-sixth");
   bookmarkOnSixth.on("click", function (event) {
     bookmarkOnSixth.toggleClass("bookmark-off");
+  });
+
+  var readersSwiper = new Swiper('.readers-choice', {
+  // Optional parameters
+    loop: true,
+    autoplay: {
+        delay: 2000,
+    },
+    effect: 'fade',
+    keyboard: {
+        enabled: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '</span>';
+        },
+    },
+  });
+
+  $('.readers-choice').on({
+    mouseenter: function () {
+      readersSwiper.autoplay.stop();
+    },
+    mouseleave: function () {
+      readersSwiper.autoplay.start();
+    }
   });
 });
