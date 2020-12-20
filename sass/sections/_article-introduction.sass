@@ -1,0 +1,83 @@
+.article
+  &-introduction
+    background-color: $light-text-color
+    padding: 67px 0 45px
+    &-head
+      display: none
+  &-intro
+    &-author
+      &_info
+        width: 264px
+        min-height: 296px
+        background-color: $light-text-color
+        border: 1px solid $grid-divider
+        border-radius: 10px
+        overflow: hidden
+        position: absolute
+        top: 70%
+        right: 13%
+        &-top
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 35px 0 20px
+          border-bottom: 1px solid $grid-divider
+        &-sub
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 15px 0
+      &_avatar
+        width: 90px
+        height: 90px
+        object-fit: cover
+        border-radius: 50%
+        overflow: hidden
+        margin-bottom: 15px
+      &_name
+        font-size: 20px
+        line-height: 25px
+        font-weight: 700
+        color: $dark-bgcolor
+        margin-bottom: 5px
+        +title-fonts
+      &_job
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        color: $right-bgcolor
+        margin-bottom: 15px
+      &_articles
+        &-amount
+          font-weight: 900
+          color: $dark-bgcolor
+          margin: 0
+    &_top
+      margin-bottom: 9px
+    &_sub
+      margin-bottom: 45px
+    &_first
+      &-letter
+        width: 79px
+        height: 73px
+        object-fit: cover
+        float: left
+        margin: 9px 19px 8px 0
+    &_text
+      font-size: 18px
+      line-height: 30px
+      font-weight: 400
+      color: $right-bgcolor
+      margin: -7px 0 0 -1px
+  &-begin
+    &_title
+      font-size: 25px
+      line-height: 30px
+      font-weight: 700
+      color: $dark-bgcolor
+      margin: 0 0 40px
+      +title-fonts
+.text
+  &-wrapper
+    &_item
+      margin-bottom: 38.5px

@@ -107,6 +107,11 @@
     padding: 15px 0 3px 35px
     &::after
       bottom: 18%
+    &-intro
+      &-author
+        &_info
+          top: 50%
+          right: 10%
   .top
     margin-bottom: 0
     &-pic
@@ -503,6 +508,12 @@
       &-extra
         color: $light-text-color
         opacity: 0.75
+    &-intro
+      &-author
+        &_info
+          top: 53%
+          right: 10%
+          width: 235px
   .popular
     &-pic
       width: 100%
@@ -871,6 +882,14 @@
         margin-right: 15px
       &-forward
         margin: 0 0 0 15px
+  .article
+    &-intro
+      &_text
+        font-size: 16px
+        line-height: 26px
+      &-author
+        &_info
+          right: 5%
 
 @media (max-width:  680px)
   .wrapper
@@ -985,6 +1004,13 @@
         font-size: 12px
       &-extra
         font-size: 12px
+    &-intro
+      &-author
+        &_info
+          position: unset
+          display: inline-block
+          margin: 0 0 20px
+          width: 100%
   .read
     &-info
       &-text
@@ -1077,6 +1103,13 @@
   .article
     &-main
       margin-top: 80px
+    &-introduction
+      .content
+        &-wrapper
+          max-width: 100%
+          &_article
+            &-text
+              max-width: 100%
 @media (max-width:  570px)
   .wrapper
     max-width: 450px

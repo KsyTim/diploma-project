@@ -2386,7 +2386,7 @@ template {
 .article-main {
   font-family: 'Lato', sans-serif;
   position: relative;
-  padding: 60px 0 71px;
+  padding: 60px 0 73px;
 }
 
 .article-main::before {
@@ -2468,6 +2468,11 @@ template {
   margin: 0 62.3% 0 0;
 }
 
+.content-wrapper_article-text {
+  position: relative;
+  max-width: 64.8%;
+}
+
 .content-wrapper-second {
   width: 85%;
 }
@@ -2513,6 +2518,111 @@ template {
   line-height: 15px;
   color: #fff;
   opacity: 0.85;
+}
+
+.article-introduction {
+  background-color: #fff;
+  padding: 67px 0 45px;
+}
+
+.article-introduction-head {
+  display: none;
+}
+
+.article-intro-author_info {
+  width: 264px;
+  min-height: 296px;
+  background-color: #fff;
+  border: 1px solid #D9DADB;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 70%;
+  right: 13%;
+}
+
+.article-intro-author_info-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0 20px;
+  border-bottom: 1px solid #D9DADB;
+}
+
+.article-intro-author_info-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.article-intro-author_avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.article-intro-author_name {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #262D33;
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.article-intro-author_job {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #4B5157;
+  margin-bottom: 15px;
+}
+
+.article-intro-author_articles-amount {
+  font-weight: 900;
+  color: #262D33;
+  margin: 0;
+}
+
+.article-intro_top {
+  margin-bottom: 9px;
+}
+
+.article-intro_sub {
+  margin-bottom: 45px;
+}
+
+.article-intro_first-letter {
+  width: 79px;
+  height: 73px;
+  object-fit: cover;
+  float: left;
+  margin: 9px 19px 8px 0;
+}
+
+.article-intro_text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #4B5157;
+  margin: -7px 0 0 -1px;
+}
+
+.article-begin_title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #262D33;
+  margin: 0 0 40px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.text-wrapper_item {
+  margin-bottom: 38.5px;
 }
 
 @media (min-width: 992px) {
@@ -2633,6 +2743,10 @@ template {
   }
   .article::after {
     bottom: 18%;
+  }
+  .article-intro-author_info {
+    top: 50%;
+    right: 10%;
   }
   .top {
     margin-bottom: 0;
@@ -3081,6 +3195,11 @@ template {
     color: #fff;
     opacity: 0.75;
   }
+  .article-intro-author_info {
+    top: 53%;
+    right: 10%;
+    width: 235px;
+  }
   .popular-pic {
     width: 100%;
   }
@@ -3486,6 +3605,13 @@ template {
   .web-navigation-forward {
     margin: 0 0 0 15px;
   }
+  .article-intro_text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .article-intro-author_info {
+    right: 5%;
+  }
 }
 
 @media (max-width: 680px) {
@@ -3618,6 +3744,12 @@ template {
   .article-author-extra {
     font-size: 12px;
   }
+  .article-intro-author_info {
+    position: unset;
+    display: inline-block;
+    margin: 0 0 20px;
+    width: 100%;
+  }
   .read-info-text {
     font-size: 24px !important;
     line-height: 35px !important;
@@ -3707,6 +3839,12 @@ template {
   }
   .article-main {
     margin-top: 80px;
+  }
+  .article-introduction .content-wrapper {
+    max-width: 100%;
+  }
+  .article-introduction .content-wrapper_article-text {
+    max-width: 100%;
   }
 }
 
