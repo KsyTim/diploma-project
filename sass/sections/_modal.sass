@@ -1,0 +1,134 @@
+.modal
+  &-overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 100
+    background-color: rgba(40, 47, 54, 0.8)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &-window
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 110
+    max-width: 360px
+    min-height: 530px
+    padding: 30px 35px 40px
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light-text-color
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+    &_item
+      display: flex
+      flex-direction: column
+      width: 290px
+      flex-basis: 100%
+    &-button
+      font-size: 14px
+      line-height: 20px
+      font-weight: 700
+      color: $light-text-color
+      max-width: 122px
+      min-width: 40px
+      padding: 10px 25px
+      border: none
+      outline: none
+      border-radius: 20px
+      overflow: hidden
+      background-color: $tab-stack
+    &-form
+      display: flex
+      flex-direction: column
+      position: relative
+  &-invalid
+    &:last-child
+      display: block
+      color: $hot-color
+      font-size: 12px
+      font-family: 'Lato', sans-serif
+      margin-bottom: 10px
+  &-title
+    font-size: 20px
+    line-height: 25px
+    margin: 0 0 25px
+  &-subtitle
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    color: $dark-bgcolor
+    margin-bottom: 5px
+  &-close
+    position: absolute
+    right: 15px
+    top: 15px
+
+#modal-email
+  height: 40px
+  margin-bottom: 15px
+  padding: 10px 15px
+  color: $comments-color
+  border: 1px solid $grid-divider
+#modal-text-message
+  height: 120px
+  margin-bottom: 15px
+  border: 1px solid $grid-divider
+#accept
+  appearance: none
+  width: 20px
+  height: 20px
+  display: inline
+  border: 1px solid $grid-divider
+  margin-right: 10px
+  border-radius: 3px
+  overflow: hidden
+  position: relative
+  outline: none
+#select-direction
+  appearance: none
+  height: 40px
+  font-size: 14px
+  line-height: 20px
+  font-family: 'Lato', sans-serif
+  margin-bottom: 15px
+  padding: 10px 15px
+  color: $comments-color
+  border: 1px solid $grid-divider
+  background: transparent url(../img/select-arrow.svg) no-repeat 95% 50%
+  outline: none
+  position: relative
+
+#accept
+  &:checked
+    background: $tab-stack url(../img/check-button.svg) no-repeat 50% 50%
+
+.personality
+  margin-bottom: 30px
+  flex-direction: row
+  align-items: center
+  .modal
+    &-invalid
+      color: $hot-color
+      font-size: 12px
+      font-family: 'Lato', sans-serif
+      position: absolute
+      bottom: 7.5%
+      left: 0
+      margin-bottom: 10px
+  &-info
+    font-size: 14px
+    line-height: 20px
+    font-weight: 400
+    color: $right-bgcolor

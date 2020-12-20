@@ -168,6 +168,19 @@
       width: 470px
       &-info
         padding: 35px 25px
+  .footer
+    &-sections
+      &_item
+        min-width: 16.6%
+    &-categories
+      &::before
+        width: 100%
+    &-contacts
+      &-nav
+        margin-right: 19%
+    &-copyright
+      &-right
+        max-width: 20%
 
 @media (max-width:  1024px)
   .wrapper
@@ -293,6 +306,13 @@
         margin: 0 0 15px
       &-text
         margin: 0 0 20px
+  .footer
+    &-contacts
+      &-nav
+        margin-right: 17%
+        &_item
+          &:not(:last-child)
+            margin-right: 20px
 @media (max-width:  992px)
   .wrapper
     max-width: 80%
@@ -663,6 +683,7 @@
         right: 7%
         transform: rotateY(180deg)
   .readers
+    padding: 60px 0 40px
     &-container
       display: grid
       grid-template: repeat(6, min-content) / repeat(2, 1fr)
@@ -682,6 +703,31 @@
           color: $right-bgcolor
         &_direction
           margin-bottom: 30px
+  .subscribe
+    &-info
+      &-text
+        font-size: 32px !important
+        line-height: 40px !important
+  .footer
+    &-sections
+      flex-wrap: wrap
+      padding-bottom: 5%
+      &_item
+        min-width: 33.3%
+        &:nth-child(-n+2)
+          margin-bottom: 10%
+    &-logo
+      margin-right: 50px
+    &-contacts
+      &-nav
+        flex-direction: column
+        margin-right: 28%
+        &_item
+          &:not(:last-child)
+            margin: 0 0 15px
+    &-copyright
+      &-right
+        max-width: 28%
 
 @media (max-width:  800px)
   .useful
@@ -767,7 +813,7 @@
       &:nth-child(n+4)
         display: block
   .header
-    padding: 18px 0
+    padding: 19px 0
     position: fixed
     top: 0
     right: 0
@@ -926,6 +972,29 @@
           line-height: 20px
         &_text
           margin: 0 0 30px
+  .subscribe
+    &-info
+      &-text
+        font-size: 26px !important
+        line-height: 32px !important
+    &-button
+      width: 120px
+  #subscribe-input
+    width: 240px
+  .footer
+    &-logo
+      margin-right: 40px
+    &-contacts
+      &-nav
+        margin-right: 15%
+    &-copyright
+      &-right
+        max-width: 33%
+      &-left
+        max-width: 55%
+  .modal
+    &-window
+      transform: translate(-50%, -40.5%)
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
@@ -1090,6 +1159,27 @@
         width: 5px
         height: 5px
         margin: 0 10px 0 0 !important
+  .subscribe
+    &-info
+      &-text
+        font-size: 23px !important
+        line-height: 28px !important
+  .footer
+    &-socials
+      &-link
+        &:not(:last-child)
+          margin-right: 9px
+      &_item
+        width: 30px
+        height: 30px
+    &-copyright
+      flex-direction: column
+      &-left
+        max-width: 100%
+      &-right
+        max-width: 100%
+        order: -1
+        margin-bottom: 10px
 
 @media (max-width:  480px)
   .wrapper
@@ -1301,6 +1391,70 @@
       bottom: 15px !important
       &-bullet
         margin: 0 8px 0 0 !important
+  .subscribe
+    &-info
+      &-text
+        font-size: 18px !important
+        line-height: 20px !important
+    &-button
+      width: 100px
+      height: 35px
+      font-size: 12px
+      line-height: 14px
+      font-weight: 500
+      padding: 10px 14px !important
+    &-invalid
+      bottom: -85%
+      line-height: 16px
+  #subscribe-input
+    width: 170px
+    height: 35px
+  .footer
+    &-sections
+      &_item
+        min-width: 50%
+        &:nth-child(-n+4)
+          margin-bottom: 15%
+    &-logo
+      align-self: center
+      margin: 0
+    &-contacts
+      &-nav
+        margin: 0 15%
+    &-socials
+      display: flex
+      flex-direction: column
+      &-link
+        &:not(:last-child)
+          margin: 0 0 10px
+  .modal
+    &-window
+      max-width: 305px
+      min-height: 0
+      max-height: 465px
+      &_item
+        width: 235px
+    &-invalid
+      &:last-child
+        font-size: 10px
+        margin-bottom: 0
+  .personality
+    .modal
+      &-invalid
+        bottom: 8.5%
+        font-size: 10px
+        margin-bottom: 15px
+  #modal-email
+    height: 30px
+    padding: 3px 10px
+  #select-direction
+    height: 30px
+    font-size: 12px
+    line-height: 12px
+    padding: 3px 10px
+  #modal-text-message
+    height: 70px
+
 @media (max-width:  365px)
   .wrapper
     max-width: 280px
@@ -1438,10 +1592,50 @@
   .swiper
     &-pagination
       bottom: 10px !important
+  .subscribe
+    &-info
+      &-text
+        font-size: 15px !important
+        line-height: 15px !important
+        margin: 0 0 15px
+    &-button
+      max-width: 90px
+      min-height: 30px
+      font-size: 10px
+      line-height: 12px
+      font-weight: 400
+      padding: 10px 15px !important
+  #subscribe-input
+    width: 125px
+    height: 30px
+  .footer
+    &-contacts
+      &-nav
+        margin: 0 10%
 
-@media screen and (min-width: 301px) and (max-width: 780px) and (orientation: landscape)
+@media screen and (min-width: 681px) and (max-width: 780px) and (orientation: landscape)
   .navbar
     width: 100%
     flex-flow: row wrap
     &__item
       margin-right: 14px
+  .modal
+    &-window
+      &--visible
+        min-height: 0
+        max-height: 100%
+        overflow: auto
+
+@media screen and (min-width: 301px) and (max-width: 680px) and (orientation: landscape)
+  .navbar
+    width: 100%
+    flex-flow: row wrap
+    &__item
+      margin-right: 14px
+  .modal
+    &-window
+      &--visible
+        min-height: 0
+        max-height: 83%
+        overflow: auto
+        transform: translate(-50%, -30%)

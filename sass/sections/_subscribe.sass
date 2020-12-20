@@ -1,0 +1,54 @@
+
+#subscribe-input
+  position: relative
+  width: 313px
+  height: 40px
+  padding: 10px 13px
+  margin: 0 10px 0 0
+  border: 1px solid $grid-divider
+  border-radius: 5px
+  overflow: hidden
+  outline: none
+  +input-text
+
+.subscribe
+  padding: 61px 0 72px
+  &-head
+    display: none
+  &-info
+    &-text
+      font-size: 40px !important
+      line-height: 50px !important
+      font-weight: 700
+      margin: 0 0 25px
+      color: $dark-bgcolor
+  &-container
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  &-form
+    display: flex
+    align-items: center
+    position: relative
+  &-button
+    padding: 10px 25px
+    font-size: 13px
+    line-height: 20px
+    font-weight: 550
+    color: $light-text-color
+    background-color: $tab-stack
+    width: 136px
+    height: 40px
+    border: none
+    outline: none
+    border-radius: 20px
+    overflow: hidden
+  &-invalid
+    color: $hot-color
+    font-size: 12px
+    font-family: 'Lato', sans-serif
+    position: absolute
+    bottom: -40%
+    left: 0

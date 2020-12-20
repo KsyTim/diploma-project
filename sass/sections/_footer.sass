@@ -1,0 +1,94 @@
+.footer
+  padding: 34px 0 0
+  &-container
+    display: flex
+    flex-direction: column
+  &-sections
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    padding-bottom: 49px
+    border-bottom: 1px solid $grid-divider
+    &_item
+      min-width: 195px
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        top: -35px
+        left: 0
+        width: 100%
+        height: 5px
+        background-color: $light-text-color
+      &-sub
+        margin: 0 0 15px
+        +readers-card-text
+      &-info
+        padding: 0
+        margin: 0
+        list-style: none
+      &-title
+        margin: 0 0 25px
+  &-news
+    &::before
+      background-color: $hot-color
+  &-articles
+    &::before
+      background-color: $html-color
+  &-vlessons
+    &::before
+      background-color: $tab-stack
+  &-courses
+    &::before
+      background-color: $web-color
+  &-info
+    &::before
+      background-color: $css-another-color
+  &-categories
+    &::before
+      width: 85%
+      background-color: $js-color
+  &-logo
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 30px
+  &-contacts
+    padding: 30px 0 28px
+    display: flex
+    align-items: center
+    border-bottom: 1px solid $grid-divider
+    &-nav
+      padding: 0
+      margin: 0
+      list-style: none
+      display: flex
+      margin-right: 32.25%
+      &_item
+        letter-spacing: 0.5px
+        font-weight: 700
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: $dark-bgcolor
+        &:not(:last-child)
+          margin-right: 30px
+  &-socials
+    &_item
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      overflow: hidden
+    &-link
+      &:not(:last-child)
+        margin-right: 11.5px
+  &-copyright
+    padding: 40px 0 55px
+    display: flex
+    justify-content: space-between
+    +input-text
+    &-left
+      max-width: 66%
+    &-right
+      max-width: 15%
