@@ -86,6 +86,10 @@ $(document).ready(function () {
   bookmarkOnSixth.on("click", function (event) {
     bookmarkOnSixth.toggleClass("bookmark-off");
   });
+  var bookmarkOnArticleFirst = $(".bookmark-on-article_first");
+  bookmarkOnArticleFirst.on("click", function (event) {
+    bookmarkOnArticleFirst.toggleClass("bookmark-off-article_first");
+  });
 
   var readersSwiper = new Swiper('.readers-choice', {
   // Optional parameters

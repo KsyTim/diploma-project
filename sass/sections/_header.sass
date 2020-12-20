@@ -13,6 +13,16 @@
         font-size: 14px
         line-height: 20px
         color: $light-text-color
+  &_article
+    background-color: $light-text-color
+    padding: 10.8px 0
+    &-link
+      color: $comments-color !important
+    &-navbar
+      background-color: $navbar-article-color !important
+      color: $dark-bgcolor !important
+    &-mobile
+      background-color: $light-text-color !important
 .wrapper
   max-width: 1140px
   margin: 0 auto
@@ -22,8 +32,17 @@
   padding: 0
   margin: 0
   &-name
+    font-family: 'Roboto Slab', sans-serif
     font-size: 26px !important
     margin-left: 10px
+    &-article
+      color: $tab-stack !important
+      font-size: 25px !important
+  &-pick
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    overflow: hidden
 .navbar
   list-style: none
   margin: 0 91px
@@ -35,6 +54,7 @@
     &:last-child
       display: none
     &-link
+      font-family: 'Lato', sans-serif
       font-weight: 700
       font-size: 14px
       line-height: 20px
@@ -82,6 +102,11 @@
     outline: none
     &-mobile
       display: none
+  &-input
+    &_article
+      z-index: 5
+      background-color: $active-tab !important
+      color: $comments-color
 
 .menu
   &-arrow

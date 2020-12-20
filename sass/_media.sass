@@ -153,7 +153,7 @@
     &-directions
       margin-bottom: 10px
     &-start
-      font-size: 12px
+      font-size: 11px
   .recent
     &-news
       &-text
@@ -181,6 +181,21 @@
     &-copyright
       &-right
         max-width: 20%
+  .content
+    &-wrapper
+      &-first
+        &_direction
+          margin: 0 52.3% 0 0
+  .article
+    &-main
+      &-title
+        font-size: 26px
+        line-height: 32px
+  .bookmark
+    &-on
+      &-article
+        &_first
+          top: 24.5%
 
 @media (max-width:  1024px)
   .wrapper
@@ -275,7 +290,7 @@
         height: 190px
   .news
     &-start
-      font-size: 11px
+      font-size: 10.5px
       letter-spacing: 0
   .recent
     &-news
@@ -313,6 +328,25 @@
         &_item
           &:not(:last-child)
             margin-right: 20px
+  .content
+    &-wrapper
+      &-first
+        &_direction
+          margin: 0 49% 0 0
+  .article
+    &-main
+      &-title
+        font-size: 24px
+        line-height: 27px
+      &-info
+        font-size: 17px
+        line-height: 24px
+    .bookmark
+      &-on
+        &-article
+          &_first
+            top: 26.5%
+
 @media (max-width:  992px)
   .wrapper
     max-width: 80%
@@ -728,6 +762,28 @@
     &-copyright
       &-right
         max-width: 28%
+  .content
+    &-wrapper
+      &-first
+        &_direction
+          margin: 0 33% 0 0
+  .article
+    &-main
+      &-info
+        font-size: 14px
+        line-height: 20px
+  .bookmark
+    &-on
+      &-article
+        &_first
+          top: 22.5%
+  .web
+    &-navigation
+      &-main
+        .web
+          &-navigation
+            &-info
+              width: 75%
 
 @media (max-width:  800px)
   .useful
@@ -804,6 +860,17 @@
       &::before
         top: -5%
         right: -25%
+  .content
+    &-wrapper
+      &-first
+        &_direction
+          margin: 0 35% 0 0
+  .web
+    &-navigation
+      &-main
+        margin-right: 15px
+      &-forward
+        margin: 0 0 0 15px
 
 @media (max-width:  680px)
   .wrapper
@@ -853,6 +920,8 @@
   .logo
     &-pick
       width: 35px
+      &-article
+        width: 40px
     &-name
       font-size: 20px !important
       font-weight: 550
@@ -995,6 +1064,19 @@
   .modal
     &-window
       transform: translate(-50%, -40.5%)
+  .content
+    &-wrapper
+      &-first
+        &_direction
+          margin: 0 23% 0 0
+  .bookmark
+    &-on
+      &-article
+        &_first
+          top: 24%
+  .article
+    &-main
+      margin-top: 80px
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
@@ -1180,6 +1262,21 @@
         max-width: 100%
         order: -1
         margin-bottom: 10px
+  .content
+    &-wrapper
+      max-width: 100%
+      &-first
+        &_direction
+          margin: 0 25% 0 0
+  .bookmark
+    &-on
+      &-article
+        &_first
+          top: 10%
+  .article
+    &-main
+      &-title
+        width: 90%
 
 @media (max-width:  480px)
   .wrapper
@@ -1194,6 +1291,8 @@
       font-weight: 500
     &-pick
       width: 32px
+      &-article
+        width: 40px
   .menu
     &-s
       &-pic
@@ -1454,6 +1553,30 @@
     padding: 3px 10px
   #modal-text-message
     height: 70px
+  .web
+    &-navigation
+      flex-wrap: wrap
+      justify-content: flex-end
+      &-main
+        margin: 0 15px 10px 0
+  .bookmark
+    &-on
+      &-article
+        &_first
+          top: 15%
+  .article
+    &-main
+      &-title
+        width: 100%
+      &-info
+        width: 100%
+  .content
+    &-wrapper
+      &-first
+        &_direction
+          margin: 0 35% 0 0
+      &-second
+        width: 100%
 
 @media (max-width:  365px)
   .wrapper
@@ -1612,6 +1735,12 @@
     &-contacts
       &-nav
         margin: 0 10%
+  .content
+    &-wrapper
+      &-first
+        margin: 0 0 60px
+        &_direction
+          margin: 0 24% 0 0
 
 @media screen and (min-width: 681px) and (max-width: 780px) and (orientation: landscape)
   .navbar

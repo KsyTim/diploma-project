@@ -1,0 +1,90 @@
+.article
+  &-main
+    font-family: 'Lato', sans-serif
+    position: relative
+    padding: 60px 0 71px
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+    &-container
+      position: relative
+      z-index: 1
+    &-title
+      font-weight: 600
+      font-size: 55px
+      line-height: 70px
+      color: $light-text-color
+      margin: 0 0 32px
+    &-info
+      font-family: 'Lato', sans-serif
+      font-weight: 400
+      font-size: 18px
+      line-height: 30px
+      color: $light-text-color
+      opacity: 0.85
+      width: 80%
+      margin: 0 0 43px
+  &-publication
+    &-info
+      display: flex
+      align-items: center
+    &_item
+      display: flex
+      align-items: center
+      margin-right: 20px
+
+.bookmark
+  &-on
+    &-article
+      &_first
+        +bookmark-article-on
+  &-off
+    &-article
+      &_first
+        +bookmark-article-off
+.content
+  &-wrapper
+    max-width: 82.89%
+    margin: 0 auto
+    &-first
+      display: flex
+      align-items: center
+      margin: 0 0 50px
+      &_direction
+        font-family: 'Lato', sans-serif
+        font-weight: 600
+        margin: 0 62.3% 0 0
+    &-second
+      width: 85%
+.web
+  &-navigation
+    display: flex
+    &_item
+      display: flex
+      align-items: center
+    &-pic
+      margin-right: 5px
+      &_forward
+        margin: 0 0 0 5px
+    &-info
+      margin: 0
+    &-main
+      margin-right: 35px
+    &-forward
+      margin: 0 0 0 25px
+.publication
+  &-pic
+    width: 15px
+    height: 15px
+    object-fit: cover
+    margin-right: 5px
+  &-text
+    font-size: 12px
+    line-height: 15px
+    color: $light-text-color
+    opacity: 0.85
