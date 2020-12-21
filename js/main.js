@@ -180,6 +180,20 @@ $(document).ready(function () {
     } else {
       false;
     }
-  }
+  };
+  var articleSwiper = new Swiper('.article-slider', {
+    loop: true,
+    effect: 'fade',
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.article-slider-next',
+      prevEl: '.article-slider-prev',
+    },
+
+    keyboard: {
+      enabled: true,
+    },
+  });
 
 });
