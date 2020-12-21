@@ -1,0 +1,145 @@
+.article
+  &-body
+    padding: 55px 0 0
+    &-head
+      display: none
+    &-left
+      max-width: 65%
+      margin-right: 7%
+    &-continue
+      padding: 48px 0 0
+      &_item
+        &-text
+          &_dark
+            position: relative
+            font-size: 25px
+            line-height: 30px
+            font-weight: 700
+            color: $dark-bgcolor
+            margin-bottom: 57px
+            +title-fonts
+            &::before
+              position: absolute
+              content: ''
+              width: 70px
+              height: 70px
+              top: -20px
+              left: -20px
+              background: url(../img/quote.png) no-repeat 0 0
+              background-size: 70px
+              z-index: -1
+        .intro
+          &_text
+            &-last
+              margin-bottom: 50px
+      &_tags
+        max-width: 69%
+        padding: 0 0 62px
+        border-bottom: 1px solid $grid-divider
+        &-text
+          font-size: 14px
+          line-height: 20px
+          font-weight: 900
+          color: $dark-bgcolor
+          padding: 7px 13.5px
+    .content
+      &-wrapper
+        display: flex
+.another
+  &-article
+    &_content
+      display: flex
+      flex-direction: column
+    &_suggestion
+      max-width: 263px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin: 13.3% 0 0 0
+      &-title
+        font-size: 20px
+        line-height: 25px
+        font-weight: 700
+        color: $dark-bgcolor
+        margin-bottom: 20px
+        +title-fonts
+        &-sub
+          max-width: 78%
+          font-size: 16px
+          line-height: 25px
+          font-weight: 700
+          color: $dark-bgcolor
+          margin-bottom: 5px
+          +title-fonts
+      &-pic
+        width: 100%
+        height: 180px
+        object-fit: cover
+        border-radius: 10px
+        overflow: hidden
+        margin-bottom: 15px
+      &-text
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        color: $right-bgcolor
+        margin: 0 0 20px
+      &-info
+        display: flex
+        align-items: center
+        &-pic
+          width: 15px
+          height: 15px
+          object-fit: cover
+          margin-right: 6px
+      &-views
+        margin-right: 10px
+        display: flex
+        align-items: center
+      &-comments
+        display: flex
+        align-items: center
+      &-amount
+        font-size: 12px
+        line-height: 15px
+        font-weight: 400
+        color: $grid-divider
+.repost
+  &-container
+    display: flex
+    flex-direction: column
+    padding: 32px 0 0
+  &-title
+    font-size: 25px
+    line-height: 30px
+    font-weight: 700
+    color: $dark-bgcolor
+    margin-bottom: 25px
+    +title-fonts
+  &-links
+    &-container
+      display: flex
+      align-items: center
+  &-info
+    color: $light-text-color
+    margin: 0 8px
+    padding: 0
+  &_button
+    display: flex
+    align-items: center
+    &-fb
+      margin: 0 14px
+  &-amount
+    &_likeit
+      color: $repost-like
+      margin: 0 !important
+    &_facebook
+      color: $repost-fb
+      margin: 0 !important
+    &_twitter
+      color: $gallery-amount
+      margin: 0 !important
+  &-pic
+    width: 20px
+    height: 20px
+    object-fit: cover

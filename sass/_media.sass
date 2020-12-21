@@ -110,7 +110,8 @@
     &-intro
       &-author
         &_info
-          right: 10%
+          right: 0%
+          top: -10%
     &-slider
       &-description
         &_left
@@ -363,6 +364,12 @@
         &-article
           &_first
             top: 26.5%
+  .another
+    &-article
+      &_suggestion
+        &-title
+          &-sub
+            max-width: 82%
 
 @media (max-width:  992px)
   .wrapper
@@ -524,7 +531,6 @@
       &-author
         &_info
           top: -8%
-          right: 10%
           width: 200px
   .popular
     &-pic
@@ -814,6 +820,10 @@
       .swiper
         &-container
           height: 475px
+    &-body
+      &-continue
+        &_tags
+          max-width: 90%
   .bookmark
     &-on
       &-article
@@ -826,6 +836,30 @@
           &-navigation
             &-info
               width: 75%
+  .another
+    &-article
+      &_suggestion
+        margin: 45% 0 0 0
+        &-title
+          font-size: 15px
+          &-sub
+            font-size: 11px
+            line-height: 19px
+        &-pic
+          height: 140px
+        &-text
+          font-size: 12px
+          line-height: 16px
+        &-amount
+          font-size: 10px
+          line-height: 15px
+  .intro
+    &_text
+      &-last
+        margin-bottom: 15px
+  .repost
+    &-container
+      align-items: center
 
 @media (max-width:  800px)
   .useful
@@ -1159,6 +1193,52 @@
           &_article
             &-text
               max-width: 100%
+    &-body
+      &-left
+        max-width: 100%
+        margin-right: 0
+      .content
+        &-wrapper
+          flex-direction: column
+          max-width: 100%
+      &-continue
+        .content
+          &-wrapper
+            max-width: 100%
+            &_article
+              &-text
+                max-width: 100%
+        &_item
+          .intro
+            &_text
+              &-last
+                margin-bottom: 30px
+          &-text
+            &_dark
+              &::before
+                top: -15px
+                left: -5px
+                background-size: 45px
+  .another
+    &-article
+      &_suggestion
+        max-width: 100%
+        flex-direction: row
+        margin: 0
+        &-text
+          margin: 0 0 10px
+        &-pic
+          margin: 0
+        &-title
+          &-sub
+            max-width: 100%
+      &_content
+        max-width: 45%
+        &-top
+          margin-right: 35px
+        &-bottom
+          margin: 45px 0 0 0
+
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
@@ -1380,6 +1460,14 @@
       &-description
         &_avatar
           height: 45px
+    &-body
+      &-continue
+        &_tags
+          padding: 0 0 40px
+          max-width: 100%
+  .repost
+    &-title
+      font-size: 22px
 
 @media (max-width:  480px)
   .wrapper
@@ -1689,6 +1777,13 @@
       .swiper
         &-container
           height: 360px
+    &-body
+      &-continue
+        &_tags
+          .tags
+            &-link
+              margin: 0 15px 14px 0
+              display: inline-block
 
   .content
     &-wrapper
@@ -1697,6 +1792,32 @@
           margin: 0 35% 0 0
       &-second
         width: 100%
+  .another
+    &-article
+      &_suggestion
+        flex-direction: column
+        align-items: stretch
+        &-pic
+          height: 100%
+      &_content
+        max-width: 100%
+        &-top
+          margin-right: 0
+        &-bottom
+          margin: 10px 0 0 0
+  .repost
+    &-links
+      &-container
+        flex-direction: column
+        align-items: flex-start
+    &_button
+      display: inline-block
+      margin: 0 0 10px
+      &-fb
+        margin: 0 0 10px
+    &-pic
+      width: 15px
+      height: 15px
 
 @media (max-width:  365px)
   .wrapper
