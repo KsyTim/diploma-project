@@ -196,4 +196,18 @@ $(document).ready(function () {
     },
   });
 
+  var extraComments = $('.comments-section_button');
+    extraComments.on("click", function (event) {       
+    $(".comments-section-container_hidden").toggleClass("comments-section-container_visible");
+  });
+
+  $(".comments-section-form").validate({
+    errorClass: "comments-invalid",
+    messages: {
+      'comments-section-form_message': {
+        required: "* Пожалуйста напишите сообщение",
+        minlength: "* Минимальное количество символов - 100"
+      },
+    },
+  });
 });

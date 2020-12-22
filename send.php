@@ -8,6 +8,7 @@ $subscription = $_POST['subscription-input'];
 $modalTitle = $_POST['direction'];
 $modalMessage = $_POST['modal-window-message'];
 $modalEmail = $_POST['input-email'];
+$comment = $_POST['comments-section-form'];
 
 $titleSub = "Подписка Universal - веб разработка";
 $bodySub = "
@@ -20,6 +21,12 @@ $bodyModal = "
 <b>Тема обращения:</b> $modalTitle<br>
 <b>E-mail:</b> $modalEmail<br><br>
 <b>Сообщение:</b><br>$modalMessage
+";
+
+$titleComment = "Новое сообщение Universal - Новый налоговый режим для фрилансеров — налог на проф. доход";
+$bodyComment = "
+<h2>Новое сообщение</h2>
+<b>Сообщение:</b><br>$comment
 ";
 
 function sendMessage($title,$body){
@@ -63,7 +70,10 @@ if ($action == "subscribe") {
     header('Location: subscribe.php');
 } elseif ($action == "modal-window") {
     sendMessage($titleModal, $bodyModal);
-    header('Location: booking.php');
+    header('Location: ticket.php');
+} elseif ($action == "comments-section") {
+    sendMessage($titleComment, $bodyComment);
+    header('Location: comment.php');
 } else {
     echo "Error";
 }

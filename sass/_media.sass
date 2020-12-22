@@ -61,6 +61,42 @@
       &-text
         &:hover
           color: $light-text-color
+  .header
+    &_article
+      &-link
+        &:hover
+          color: $dark-bgcolor !important
+          cursor: pointer
+  .another
+    &-article
+      &_suggestion
+        &-title
+          &-sub
+            &:hover
+              color: $comments-color
+              cursor: pointer
+  .article
+    &-intro
+      &-author
+        &_info
+          &-sub
+            &:hover
+              color: $comments-color
+    &-main
+      &-title
+        cursor: pointer
+  .extra
+    &-articles
+      &-pic
+        +hover-box
+  .comments
+    &-section
+      &-form
+        &_button
+          +hover-box
+      &-name
+        cursor: pointer
+        +hover-text
 @media (max-width:  1200px)
   .wrapper
     max-width: 960px
@@ -207,7 +243,7 @@
     &-on
       &-article
         &_first
-          top: %
+          top: 25%
 
 @media (max-width:  1024px)
   .wrapper
@@ -370,6 +406,10 @@
         &-title
           &-sub
             max-width: 82%
+  .extra
+    &-articles
+      &-name
+        max-width: 100%
 
 @media (max-width:  992px)
   .wrapper
@@ -860,7 +900,20 @@
   .repost
     &-container
       align-items: center
-
+  .extra
+    &-articles
+      padding: 60px 0 40px
+      &-container
+        flex-wrap: wrap
+        justify-content: center
+      &-item
+        max-width: 34%
+        margin: 0 10px 20px 10px
+      &-pic
+        height: 160px
+      &-name
+        max-width: 100%
+        font-size: 14px
 @media (max-width:  800px)
   .useful
     &-img
@@ -956,6 +1009,10 @@
     &_text
       &-last
         margin-bottom: 15px
+  .extra
+    &-articles
+      &-pic
+        height: 150px
 
 @media (max-width:  680px)
   .wrapper
@@ -1238,6 +1295,15 @@
           margin-right: 35px
         &-bottom
           margin: 45px 0 0 0
+  .extra
+    &-articles
+      &-pic
+        height: 130px
+      &-name
+        font-size: 12px
+  .subscribe
+    &-accept
+      margin-top: 35px
 
 @media (max-width:  570px)
   .wrapper
@@ -1468,6 +1534,11 @@
   .repost
     &-title
       font-size: 22px
+  .extra
+    &-articles
+      &-name
+        font-size: 12px
+        line-height: 16px
 
 @media (max-width:  480px)
   .wrapper
@@ -1818,6 +1889,19 @@
     &-pic
       width: 15px
       height: 15px
+  .extra
+    &-articles
+      &-container
+        flex-wrap: nowrap
+        justify-content: stretch
+        flex-direction: column
+      &-item
+        max-width: 100%
+      &-name
+        font-size: 14px
+        line-height: 18px
+      &-pic
+        height: 195px
 
 @media (max-width:  365px)
   .wrapper

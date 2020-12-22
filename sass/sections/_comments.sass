@@ -1,0 +1,212 @@
+.comments
+  &-section
+    padding: 92px 0 30px
+    &-head
+      display: none
+    &-name
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $dark-bgcolor
+      margin-right: 6px
+      +title-fonts
+    &-amount
+      font-weight: 400
+      font-size: 40px
+      line-height: 50px
+      color: $comments-color
+    &-container
+      display: flex
+      flex-direction: column
+      max-width: 79.4%
+      &_item
+        display: flex
+        padding: 20px 0 31px
+        &:not(:last-child)
+          border-bottom: 1px solid $grid-divider
+        &-first
+          border: none !important
+          padding: 23px 0 42px
+        &-sub
+          padding: 7px 0 31px !important
+      &_begin
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 0 25px
+        border-bottom: 1px solid $grid-divider
+      &_exist
+        padding: 0
+        list-style: none
+        margin: 0
+        &-sub
+          padding: 0 0 0 90px
+          list-style: none
+          &-item
+            display: flex
+        &-hidden
+          &-item
+            &-first
+              border-top: 1px solid $grid-divider
+      &_hidden
+        display: none
+        list-style: none
+        padding: 0
+      &_visible
+        display: block
+        margin: 0
+    &_add
+      padding: 10px 19px
+      max-width: 228px
+      border-radius: 20px
+      overflow: hidden
+      display: flex
+      align-items: center
+      margin: 0
+    &_button
+      background-color: transparent
+      min-height: 50px
+      max-width: 100%
+      border-radius: 30px
+      overflow: hidden
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0
+      &-info
+        margin-left: 10px
+    &_user
+      &-pic
+        width: 75px
+        height: 75px
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 15px
+      &-info
+        max-width: 76%
+        &-answer
+          max-width: 85%
+      &-name
+        display: flex
+        margin-bottom: 10px
+        align-items: center
+      &-text
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+        color: $right-bgcolor
+        margin-bottom: 15px
+        &-large
+          margin-bottom: 45px
+      &-extra
+        display: flex
+        align-items: center
+    &-form
+      &_item
+        margin: 60px 0 0
+        padding: 30px 30px 35px
+        border-radius: 10px
+        overflow: hidden
+        background-color: $active-tab
+        display: flex
+        align-items: flex-start
+      &-container
+        display: flex
+        flex-direction: column
+        width: 100%
+        padding: 0 10px 0 15px
+        &_title
+          font-weight: 700
+          font-size: 20px
+          line-height: 25px
+          color: $dark-bgcolor
+          margin-bottom: 15px
+          +title-fonts
+      &_user
+        &-pic
+          margin: 40px 7px 0 0
+      &_input
+        &-message
+          resize: none
+          width: 100%
+          min-height: 130px
+          margin: 0 0 10px
+          border: 1px solid $grid-divider
+          border-radius: 3px
+      &_button
+        max-width: 137px
+        min-height: 40px
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $light-text-color
+        background-color: $tab-stack
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 10px 20px
+        border-radius: 20px
+        overflow: hidden
+        display: flex
+        align-items: center
+        &-text
+          margin-right: 5px
+  &-user
+    &-name
+      font-weight: 700
+      font-size: 16px
+      line-height: 25px
+      color: $dark-bgcolor
+      margin-right: 10px
+      +title-fonts
+    &-date
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: $comments-color
+  &-extra
+    &-answer
+      margin-right: 15px
+      display: flex
+      align-items: center
+      &_pic
+        width: 15px
+        height: 15px
+        object-fit: cover
+        margin-right: 5px
+      &_text
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: $dark-bgcolor
+    &-vote
+      display: flex
+      align-items: center
+      &_pic
+        width: 15px
+        height: 15px
+        object-fit: cover
+      &_text
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        margin: 0 10px
+        &-positive
+          color: $css-another-color
+        &-inert
+          color: $comments-color
+        &-negative
+          color: $hot-color
+  &-invalid
+    display: block
+    color: $hot-color
+    font-size: 12px
+    font-family: 'Lato', sans-serif
+    margin-bottom: 10px
+.new
+  &-article
+    &-container
+      margin-right: 34.1%
+      &_item
+        &:not(:last-child)
+          margin-right: 29px
