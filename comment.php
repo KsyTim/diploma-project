@@ -6,7 +6,7 @@
           После проверки модераторами он будет опубликован! 
           Обычно данная процедура занимает ~ 1 минуту!
         </p>
-        <a href="https://timoshenkokseniia.ru/diploma-project/article.html" class="subscribe-button new-page-button">Вернуться назад</a>
+        <a href="https://timoshenkokseniia.ru/universal/article.html" class="subscribe-button new-page-button">Вернуться назад</a>
       </div>
     </section>
 <?php include('footer.php') ?>

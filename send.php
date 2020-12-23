@@ -8,7 +8,7 @@ $subscription = $_POST['subscription-input'];
 $modalTitle = $_POST['direction'];
 $modalMessage = $_POST['modal-window-message'];
 $modalEmail = $_POST['input-email'];
-$comment = $_POST['comments-section-form'];
+$comment = $_POST['comments-section-form_message'];
 
 $titleSub = "Подписка Universal - веб разработка";
 $bodySub = "

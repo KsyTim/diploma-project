@@ -210,4 +210,14 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(function(){
+
+  $('.page-up-arrow').on('click', function(e){
+    $('html,body').stop().animate({ scrollTop: $('#page-up').offset().top }, 3000);
+    e.preventDefault();
+  });
+
+  });
+
 });

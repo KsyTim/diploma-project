@@ -5,7 +5,7 @@
         <p class="ticket-text">
           Пожалуйста ожидайте! Наша поддержка свяжется с Вами в ближайшеее время!
         </p>
-        <a href="https://timoshenkokseniia.ru/diploma-project/" class="subscribe-button new-page-button ticket-button">Вернуться на главную страницу</a>
+        <a href="https://timoshenkokseniia.ru/universal/" class="subscribe-button new-page-button ticket-button">Вернуться на главную страницу</a>
       </div>
     </section>
 <?php include('footer.php') ?>

@@ -1,4 +1,4 @@
-  <footer class="footer">
+ <footer class="footer">
     <div class="wrapper footer-container">
       <div class="footer-container_item footer-sections">
         <div class="footer-sections_item footer-news">
@@ -116,18 +116,18 @@
       <!-- /.footer-container_item -->
       <div class="footer-container_item footer-contacts">
         <img src="img/footer-logo.svg" alt="Logo Footer: Universal" class="footer-contacts_item footer-logo">
-        <ul class="footer-contacts_item footer-contacts-nav">
-          <li class="footer-contacts-nav_item">
+        <ul class="footer-contacts_item footer-contacts-nav new-article-container">
+          <li class="footer-contacts-nav_item new-article-container_item">
             <a href="#" class="footer-contacts-nav_link">контакты</a>
           </li>
-          <li class="footer-contacts-nav_item">
-            <a href="#" class="footer-contacts-nav_link">работа у нас</a>
+          <li class="footer-contacts-nav_item new-article-container_item">
+            <a href="#" class="footer-contacts-nav_link new-article-container_item">работа у нас</a>
           </li>
           <li class="footer-contacts-nav_item">
-            <a href="#" class="footer-contacts-nav_link">реклама</a>
+            <a href="#" class="footer-contacts-nav_link new-article-container_item">реклама</a>
           </li>
           <li class="footer-contacts-nav_item">
-            <a href="#" data-toggle=modal class="footer-contacts-nav_link">обратная связь</a>
+            <a href="#" class="footer-contacts-nav_link new-article-container_item">партнерство</a>
           </li>
         </ul>
         <div class="footer-contacts_item footer-socials">
@@ -163,58 +163,12 @@
     <!-- /.wrapper footer-container -->
   </footer>
   <!-- /.footer -->
-  <div class="modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-window">
-      <a href="#" class="modal-close">
-        <img src="img/modal-close.svg" alt="Icon: close modal window" />
-      </a>
-      <div class="modal-window-container">
-        <h3 class="modal-container-item roboto-title modal-title">Обратная связь</h3>
-        <form action="send.php" method="POST" class="modal-container-item modal-window-form">
-          <div class="modal-window_item">
-            <label for="select-direction" class="modal-subtitle">Тема</label>
-            <select name="direction" id="select-direction" class="select-arrow" required>
-              <option value="" disabled selected>Выберите тему</option>
-              <option value="Подписка">Подписка</option>
-              <option value="Вопросы">Вопросы</option>
-              <option value="Отзывы">Отзывы</option>
-              <option value="Предложения">Предложения</option>
-              <option value="Коммерция">Коммерция</option>
-              <option value="Реклама">Реклама</option>
-              <option value="Другое">Другое</option>
-            </select>
-          </div>
-          <div class="modal-window_item">
-            <label for="modal-text-message" class="modal-subtitle">Сообщение</label>
-            <textarea name="modal-window-message" id="modal-text-message"
-              class="modal-window-input modal-window-input-message"></textarea>
-          </div>
-
-          <div class="modal-window_item">
-            <label for="modal-email" class="modal-subtitle">Email</label>
-            <input type="email" name="input-email" id="modal-email" pattern="[\w.+-]{2,}@[\w-]{2,}([\.][a-zA-Z]{2,})$"
-              required />
-          </div>
-          <div class="modal-window_item personality">
-            <input type="checkbox" id="accept" name="modal-accept" class="modal-acception" required>
-            <span class="fake"></span>
-            <label for="accept" class="personality-info">Согласен с обработкой данных</label>
-          </div>
-          <button class="modal-window_item button modal-window-button" type="submit" value="modal-window"
-            name="action">Отправить</button>
-        </form>
-      </div>  
-    </div>
-    <!-- /.modal-window-container -->
-  </div>
+    <a href="#page-up" class="page-up-arrow"></a>
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/swiper-bundle.min.js.map"></script>
+  <!-- <script src="js/swiper-bundle.min.js.map"></script> -->
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
-</html>

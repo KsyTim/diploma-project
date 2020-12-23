@@ -5,7 +5,7 @@
         <p class="subscribe-text">
           Пожалуйста проверьте электронный ящик ранее указанной почты, там Вы найдете всю необходимую информацию и инструкции!
         </p>
-        <a href="https://timoshenkokseniia.ru/diploma-project/" class="subscribe-button new-page-button">Вернуться на главную страницу</a>
+        <a href="https://timoshenkokseniia.ru/universal/" class="subscribe-button new-page-button">Вернуться на главную страницу</a>
       </div>
     </section>
 <?php include('footer.php') ?>

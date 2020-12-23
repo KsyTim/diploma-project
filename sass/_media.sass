@@ -19,6 +19,7 @@
     &-info
       +hover-text
   .more
+    cursor: pointer
     +hover-box
     &-info
       +hover-text
@@ -29,10 +30,12 @@
     &-socials
       &-pic
         &:hover
+          transition: .5s
           box-shadow: 2px 4px 10px $dark-bgcolor
   .tags
     &-link
       &:hover
+        transition: .5s
         box-shadow: 2px 4px 10px #575157
     &-title
       &:hover
@@ -40,12 +43,15 @@
   .popular
     &-direction
       &:hover
+        transition: .5s
         box-shadow: 2px 4px 10px #e5d9fba1
     &-title
       &:hover
+        transition: .5s
         color: $light-element-hover !important
     &-theme
       &:hover
+        transition: .5s
         color: $light-element-hover !important
   .download
     &-link
@@ -60,11 +66,13 @@
     &-info
       &-text
         &:hover
+          transition: .5s
           color: $light-text-color
   .header
     &_article
       &-link
         &:hover
+          transition: .5s
           color: $dark-bgcolor !important
           cursor: pointer
   .another
@@ -73,6 +81,7 @@
         &-title
           &-sub
             &:hover
+              transition: .5s
               color: $comments-color
               cursor: pointer
   .article
@@ -81,6 +90,7 @@
         &_info
           &-sub
             &:hover
+              transition: .5s
               color: $comments-color
     &-main
       &-title
@@ -97,6 +107,18 @@
       &-name
         cursor: pointer
         +hover-text
+  .footer
+    &-sections
+      &_item
+        &-link
+          &:hover
+            color: #446e92
+    &-contacts
+      &-nav
+        &_link
+          &:hover
+            color: #446e92
+
 @media (max-width:  1200px)
   .wrapper
     max-width: 960px
@@ -244,6 +266,14 @@
       &-article
         &_first
           top: 25%
+  .comments
+    &-section
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.3%
 
 @media (max-width:  1024px)
   .wrapper
@@ -372,7 +402,7 @@
   .footer
     &-contacts
       &-nav
-        margin-right: 17%
+        margin-right: 16%
         &_item
           &:not(:last-child)
             margin-right: 20px
@@ -410,6 +440,12 @@
     &-articles
       &-name
         max-width: 100%
+  .comments
+    &-section
+      &-form
+        &-container
+          &::after
+            left: 1.6%
 
 @media (max-width:  992px)
   .wrapper
@@ -517,7 +553,7 @@
       width: 40px
       height: 40px
     &-info
-      width: 70%
+      width: 69%
       font-size: 12px
       font-weight: 500
       margin-right: 0
@@ -772,18 +808,22 @@
         position: absolute
         display: block
         background-color: $recent-arrows
-        padding: 5px
+        padding: 7px
         border-radius: 50%
+        width: 35px
+        height: 35px
         top: 5%
         right: 2%
       &-left
         position: absolute
         display: block
         background-color: $recent-arrows
-        padding: 5px
+        padding: 6px
         border-radius: 50%
+        width: 35px
+        height: 35px
         top: 5%
-        right: 7%
+        right: 9%
         transform: rotateY(180deg)
   .readers
     padding: 60px 0 40px
@@ -914,12 +954,71 @@
       &-name
         max-width: 100%
         font-size: 14px
+  .comments
+    &-section
+      .content
+        &-wrapper
+          max-width: 100%
+      &-container
+        max-width: 100%
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.05%
+
+@media (max-width:  960px)
+  .comments
+    &-section
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.15%
+@media (max-width:  920px)
+  .comments
+    &-section
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.2%
+@media (max-width:  880px)
+  .comments
+    &-section
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.25%
+@media (max-width:  850px)
+  .comments
+    &-section
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.35%
+
 @media (max-width:  800px)
   .useful
     &-img
       margin-left: -20px
     &-info
-      width: 75%
+      width: 74%
+  .comments
+    &-section
+      &_add
+        margin: 0
+      &-form
+        &-container
+          &::after
+            left: 1.45%
 @media (max-width:  767px)
   .wrapper
     max-width: 620px
@@ -1060,10 +1159,11 @@
       justify-content: space-between
       min-height: 40%
   .logo
-    &-pick
-      width: 35px
-      &-article
-        width: 40px
+    // &-pick
+    //   width: 35px
+    //   height: 35px
+    &-article
+      width: 40px
     &-name
       font-size: 20px !important
       font-weight: 550
@@ -1191,7 +1291,7 @@
         padding: 15px 35px
     &-arrows
       &-left
-        right: 9%
+        right: 11%
   .readers
     &-choice
       &-info
@@ -1304,6 +1404,16 @@
   .subscribe
     &-accept
       margin-top: 35px
+  .comments
+    &-section
+      &-name
+        font-size: 30px
+      &-amount
+        font-size: 30px
+      &-form
+        &-container
+          &::after
+            left: 1.8%
 
 @media (max-width:  570px)
   .wrapper
@@ -1539,6 +1649,23 @@
       &-name
         font-size: 12px
         line-height: 16px
+  .comments
+    &-section
+      &-name
+        font-size: 24px
+      &-amount
+        font-size: 22px
+      &-form
+        &-container
+          &_title
+            font-size: 16px
+          &::after
+            left: 2.45%
+        &_button
+          min-height: 25px
+          padding: 5px 10px
+          &-text
+            font-size: 10px
 
 @media (max-width:  480px)
   .wrapper
@@ -1551,8 +1678,9 @@
     &-name
       font-size: 20px !important
       font-weight: 500
-    &-pick
-      width: 32px
+    // &-pick
+    //   width: 32px
+    //   height: 32px
       &-article
         width: 40px
   .menu
@@ -1665,7 +1793,7 @@
         justify-content: flex-start
     &-arrows
       &-left
-        right: 12%
+        right: 14%
   .readers
     &-choice
       &-info
@@ -1902,6 +2030,39 @@
         line-height: 18px
       &-pic
         height: 195px
+  .comments
+    &-section
+      &-container
+        &_begin
+          flex-direction: column
+          align-items: flex-start
+        &_exist
+          &-sub
+            padding: 0 0 0 60px
+      &_add
+        margin: 0
+        align-self: flex-end
+      &_user
+        &-pic
+          width: 50px
+          height: 50px
+      &-form
+        &_item
+          flex-direction: column
+        &-container
+          padding: 0
+          &::after
+            top: 15.15%
+            left: 6%
+            border-right: 0px solid transparent
+            border-bottom: 0px
+            border-top: 1px solid $grid-divider
+          &_title
+            font-size: 14px
+            align-self: flex-end
+        &_user
+          &-pic
+            margin: 0 0 -25px
 
 @media (max-width:  365px)
   .wrapper
@@ -1982,8 +2143,17 @@
       font-size: 12px
   .recent
     &-arrows
+      &-right
+        width: 25px
+        height: 25px
+        padding: 2px
+        top: 7%
       &-left
+        padding: 2px
+        width: 25px
+        height: 25px
         right: 14%
+        top: 7%
   .readers
     &-direction
       padding: 3px 12px
@@ -2041,6 +2211,10 @@
     &-pagination
       bottom: 10px !important
   .subscribe
+    &-invalid
+      bottom: 42%
+    &-form
+      flex-direction: column
     &-info
       &-text
         font-size: 15px !important
@@ -2054,8 +2228,9 @@
       font-weight: 400
       padding: 10px 15px !important
   #subscribe-input
-    width: 125px
+    width: 100%
     height: 30px
+    margin-bottom: 20px
   .footer
     &-contacts
       &-nav
@@ -2081,6 +2256,33 @@
       .swiper
         &-container
           height: 290px
+  .comments
+    &-user
+      &-name
+        font-size: 12px
+        line-height: 20px
+    &-section
+      &_user
+        &-text
+          font-size: 14px
+          line-height: 20px
+      &-form
+        &_user
+          &-pic
+            width: 30px
+            height: 30px
+        &-container
+          &::after
+            width: 10px
+            height: 10px
+            top: 15.8%
+            left: 4.5%
+          &_title
+            font-size: 12px
+      &-container
+        &_exist
+          &-sub
+            padding: 0 0 0 35px
 
 @media screen and (min-width: 681px) and (max-width: 780px) and (orientation: landscape)
   .navbar

@@ -9,7 +9,12 @@ button
   outline: none
 
 body
+  position: relative
   font-family: 'Lato', sans-serif
+
+// span, p, div, a
+//   text-overflow: ellipsis
+//   overflow: hidden
 
 =title-fonts
   font-family: 'Roboto Slab', sans-serif
@@ -20,9 +25,11 @@ body
   line-height: 25px
 =hover-text
   &:hover
+    transition: .5s
     color: $light-element-hover
 =hover-box
   &:hover
+    transition: .5s
     box-shadow: 5px -5px 15px $box-hover
 =bookmark-on
   width: 20px
