@@ -162,9 +162,6 @@
         &_twitter
           margin: 0 10px
   .article
-    padding: 15px 0 3px 35px
-    &::after
-      bottom: 18%
     &-intro
       &-author
         &_info
@@ -177,11 +174,23 @@
       .swiper
         &-container
           height: 555px
+    &-author
+      &-text
+        margin-right: 15px
+  .info
+    &-text
+      max-height: 85px
+    &-title
+      margin: 15px 0 25px
+      max-height: 80px
   .top
     margin-bottom: 0
     &-pic
       width: 240px
       height: 265px
+  .sub
+    margin-top: 0
+    padding: 5px 10px 10px 35px
   .roboto
     &-title
       font-size: 16px
@@ -194,13 +203,20 @@
     &-info
       margin-top: 105px
     &-theme
+      max-height: 50px
       font-size: 12px !important
   .card
     &-date
       font-size: 10px
+    &-text
+      max-height: 55px
   .download
     &-title
       font-size: 14px
+    &-top
+      padding: 25px 15px 20px
+      &::after
+        left: 60%
   .tags
     padding: 20px 12px 10px 15px
     &-top
@@ -218,6 +234,7 @@
       font-size: 14px
       line-height: 22px
     &-text
+      max-height: 70px
       font-size: 12px
       line-height: 18px
     &-directions
@@ -227,6 +244,7 @@
   .recent
     &-news
       &-text
+        max-height: 50px
         font-size: 12px
         line-height: 18px
   .readers
@@ -326,14 +344,21 @@
       &__item
         font-size: 12px
         line-height: 18px
+  .card
+    &-text
+      max-height: 50px
   .roboto
     &-title
       font-size: 15px
       line-height: 20px
   .top
     margin-bottom: -5px
+    &-pic
+      height: 245px
+  .sub
+    padding: 10px 10px 10px 35px
   .article
-    padding: 15px 0 3px 25px
+    // padding: 15px 0 3px 25px
     &-author
       &-name
         width: 300px
@@ -361,6 +386,14 @@
     &-author
       &-pic
         margin-right: 5px
+    &-info
+      margin-top: 90px
+  .download
+    &-title
+      max-height: 65px
+  .info
+    &-text
+      max-height: 80px
   .main
     &-news
       &-pic
@@ -509,9 +542,12 @@
     max-height: 350px
   .right
     min-width: 123px
+    max-height: 80px
+    overflow: hidden
   .tab
     &-name
       margin-bottom: 0
+      overflow: hidden
     &-img
       width: 100%
       height: 372px
@@ -521,6 +557,7 @@
     margin-bottom: 65px
   .stack
     &-topic
+      max-height: 65px
       font-size: 30px
       line-height: 32px
       margin-bottom: 35px
@@ -609,6 +646,8 @@
           top: -8%
           width: 200px
   .popular
+    &-info
+      margin-top: 145px
     &-pic
       width: 100%
     &-theme
@@ -628,11 +667,11 @@
         font-size: 12px
         line-height: 15px
   .download
-    padding: 47px 25px 0
-    &::after
-      bottom: 31%
-    &-sub
-      margin: 50px 0 0
+    &-top
+      padding: 25px 30px 20px
+      &::after
+        left: 70%
+        top: 5%
   .tags
     padding: 20px 18px 10px 25px
     &::before
@@ -641,6 +680,8 @@
       margin: 0 0 46px
     &-link
       margin: 0 8px 12px 0
+    &-sub
+      width: 100%
   .tools
     &-pic
       width: 100%
@@ -669,10 +710,14 @@
       font-size: 20px
       line-height: 25px
   .top
-    margin-bottom: 15px
+    margin-bottom: 0
+    padding: 0
+    border-bottom: 0
     &-info
       position: absolute
       z-index: 6
+      left: 10%
+      top: 10%
     &-pic
       position: absolute
       z-index: 0
@@ -684,11 +729,26 @@
     position: absolute
     z-index: 6
     bottom: 5%
-    left: 5%
+    left: 0
+    width: 100%
+    border-top: 1px solid $grid-divider
+    padding: 0
+    margin: 0
+    .article
+      &-author
+        &-pic
+          margin: 10px 10px 0 10px
+        &-text
+          margin: 10px 5px 0
+    .comments
+      &-dark
+        margin-top: 10px
   .card
     &-date
       font-size: 12px
       line-height: 15px
+    &-text
+      max-height: 80px
   .info
     &-direction
       color: #4B6470
@@ -730,6 +790,7 @@
     &-title
       line-height: 22px
     &-text
+      max-height: 100px
       font-size: 13px
       line-height: 20px
       margin: 0 0 10px
@@ -839,13 +900,16 @@
         height: 100%
         padding: 10% 55px 40px 50px
         &_title
+          max-height: 95px
           font-size: 25px
           line-height: 30px
-          margin: 0 0 25px
+          margin: 0 0 15px
         &_text
           color: $right-bgcolor
         &_direction
           margin-bottom: 30px
+    &-title
+      max-height: 160px
   .subscribe
     &-info
       &-text
@@ -1004,7 +1068,6 @@
         &-container
           &::after
             left: 1.35%
-
 @media (max-width:  800px)
   .useful
     &-img
@@ -1159,15 +1222,11 @@
       justify-content: space-between
       min-height: 40%
   .logo
-    // &-pick
-    //   width: 35px
-    //   height: 35px
     &-article
       width: 40px
     &-name
       font-size: 20px !important
       font-weight: 550
-
   .menu
     &-s
       display: block
@@ -1176,6 +1235,9 @@
       cursor: pointer
       &-pic
         width: 25px
+  .top
+    &-info
+      max-width: 80%
   .search
     &-form
       display: block
@@ -1213,11 +1275,9 @@
       width: 75%
   .useful
     padding: 160px 0 30px
-  .download
-    padding: 47px 25px 25px
   .popular
     &-info
-      margin-top: 45px
+      margin-top: 90px
   .article
     &-author
       &-pic
@@ -1274,6 +1334,7 @@
       margin-bottom: 5px
       text-align: left
     &-title
+      max-height: 65px
       font-size: 14px
       line-height: 22px
       margin-bottom: 10px
@@ -1414,7 +1475,11 @@
         &-container
           &::after
             left: 1.8%
-
+  .download
+    &-top
+      &::after
+        left: 60%
+        top: 10%
 @media (max-width:  570px)
   .wrapper
     max-width: 450px
@@ -1456,7 +1521,7 @@
     &-container
       padding: 19px 5px 20px 9px
     &-info
-      margin-top: 65px
+      margin-top: 145px
   .card
     &-date
       font-size: 10px
@@ -1486,9 +1551,11 @@
         &-container
           height: 460px
   .download
-    &-title
+    &-top
+      padding: 25px 20px 20px
       &::after
         left: 60%
+        top: 10%
   .read
     &-info
       &-text
@@ -1540,6 +1607,8 @@
       &::before
         top: -5%
         right: -13%
+    &-text
+      max-height: 50px
   .main
     &-news
       &-card
@@ -1573,6 +1642,7 @@
     &-profile
       margin-bottom: 20px
     &-title
+      max-height: 42px
       font-size: 18px !important
       line-height: 20px !important
       width: 80%
@@ -1666,6 +1736,9 @@
           padding: 5px 10px
           &-text
             font-size: 10px
+  .top
+    &-info
+      top: 20%
 
 @media (max-width:  480px)
   .wrapper
@@ -1720,7 +1793,7 @@
     &-pic
       height: 80%
     &-container
-      width: 70%
+      width: 75%
   .roboto
     &-title
       font-size: 15px
@@ -2063,6 +2136,9 @@
         &_user
           &-pic
             margin: 0 0 -25px
+  .top
+    &-info
+      top: 10%
 
 @media (max-width:  365px)
   .wrapper
@@ -2104,10 +2180,10 @@
   .tags
     padding: 20px 35px
     &-link
-      margin: 0 15px 12px 0
+      margin: 0 15px 5px 0
   .popular
     &-info
-      margin-top: 60px
+      margin-top: 105px
     &-author
       &-pic
         margin-right: 15px
@@ -2185,6 +2261,7 @@
           line-height: 14px
           margin: 0 0 10px
         &_text
+          width: 99%
           font-size: 10px
           line-height: 12px
           margin: 0 0 15px
@@ -2283,6 +2360,12 @@
         &_exist
           &-sub
             padding: 0 0 0 35px
+  .stack
+    &-topic
+      max-height: 55px
+  .top
+    &-info
+      top: 10%
 
 @media screen and (min-width: 681px) and (max-width: 780px) and (orientation: landscape)
   .navbar

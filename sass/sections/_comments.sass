@@ -75,6 +75,22 @@
       margin: 0
       &-info
         margin-left: 10px
+      &_hidden
+        display: none
+      &_visible
+        display: block
+        background-color: transparent
+        min-height: 50px
+        max-width: 100%
+        border-radius: 30px
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0
+        .menu
+          &-arrow
+            transform: rotate(180deg)
     &_user
       &-pic
         width: 75px

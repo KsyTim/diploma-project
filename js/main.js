@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var dropdowmMenu = $('.menu-arrow');
-    dropdowmMenu.on("click", function (event) {
-      $(".navbar-tablet").toggleClass("navbar-tablet--visible");
+  dropdowmMenu.on("click", function (event) {
+    $(".navbar-tablet").toggleClass("navbar-tablet--visible");
   });
 
   var searchButton = $('.search-icon-mobile');
@@ -30,9 +30,9 @@ $(document).ready(function () {
     var direction = window.innerWidth <= 766 ? 'vertical' : 'horizontal';
 
     return direction;
-  }  
+  }
 
-   var usefulSwiper = new Swiper('.useful-slider', {
+  var usefulSwiper = new Swiper('.useful-slider', {
     // Optional parameters 
     loop: true,
     direction: getDirection(),
@@ -43,10 +43,10 @@ $(document).ready(function () {
       delay: 2000,
     },
     on: {
-        resize: function () {
-          usefulSwiper.changeDirection(getDirection());
-        }
-      },
+      resize: function () {
+        usefulSwiper.changeDirection(getDirection());
+      }
+    },
 
     keyboard: {
       enabled: true,
@@ -67,7 +67,7 @@ $(document).ready(function () {
   });
   var bookmarkOnSecond = $(".bookmark-on-second");
   bookmarkOnSecond.on("click", function (event) {
-    bookmarkOnSecond.toggleClass("bookmark-off");    
+    bookmarkOnSecond.toggleClass("bookmark-off");
   });
   $('.bookmark-on-second').click();
   var bookmarkOnThird = $(".bookmark-on-third");
@@ -92,14 +92,14 @@ $(document).ready(function () {
   });
 
   var readersSwiper = new Swiper('.readers-choice', {
-  // Optional parameters
+    // Optional parameters
     loop: true,
     autoplay: {
-        delay: 3000,
+      delay: 3000,
     },
     effect: 'fade',
     keyboard: {
-        enabled: true,
+      enabled: true,
     },
 
     // If we need pagination
@@ -107,8 +107,8 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       clickable: true,
       renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + '</span>';
-        },
+        return '<span class="' + className + '">' + '</span>';
+      },
     },
   });
 
@@ -121,7 +121,7 @@ $(document).ready(function () {
     }
   });
 
-    $(".subscribe-form").validate({
+  $(".subscribe-form").validate({
     errorClass: "subscribe-invalid",
     messages: {
       'subscription-input': {
@@ -197,8 +197,17 @@ $(document).ready(function () {
   });
 
   var extraComments = $('.comments-section_button');
-    extraComments.on("click", function (event) {       
+  extraComments.on("click", function (event) {
     $(".comments-section-container_hidden").toggleClass("comments-section-container_visible");
+    $(".comments-section_button").hide();
+    $(".comments-section_button_hidden").toggleClass("comments-section_button_visible");
+  });
+
+  var hideComments = $('.hide-button');
+  hideComments.on("click", function (event) {
+    $(".comments-section-container_visible").removeClass("comments-section-container_visible");
+    $(".comments-section_button_visible").removeClass("comments-section_button_visible");
+    $(".comments-section_button").show();
   });
 
   $(".comments-section-form").validate({
@@ -211,13 +220,38 @@ $(document).ready(function () {
     },
   });
 
-  $(function(){
+  $(function () {
 
-  $('.page-up-arrow').on('click', function(e){
-    $('html,body').stop().animate({ scrollTop: $('#page-up').offset().top }, 3000);
-    e.preventDefault();
+    $('.page-up-arrow').on('click', function (e) {
+      $('html,body').stop().animate({ scrollTop: $('#page-up').offset().top }, 3000);
+      e.preventDefault();
+    });
+
   });
 
-  });
+  //hide extra text using '...' at the end of block 
+  // for(i=0; i<5; i++){
+  //   var tabExtraText = $('.tab-info');
+  //   $clamp(tabExtraText[i], { clamp: 2 });
+  // };  
+
+  // var hideExtraArticleTextGrid = $('.info-text');
+  // $clamp(hideExtraArticleTextGrid[0], { clamp: 4 });
+
+  // for(i=0; i<4; i++){
+  //   var usefulExtraText = $('.useful-info');
+  //   $clamp(usefulExtraText[i], { clamp: 2 });
+  // };  
+
+  // for(i=0; i<5; i++){
+  //   var cardExtraText = $('.card-text');
+  //   $clamp(cardExtraText[i], { clamp: 3 });
+  // };  
+
+  // for(i=0; i<6; i++){
+  //   var newsExtraText = $('.news-text');
+  //   $clamp(newsExtraText[i], { clamp: 3 });
+  // };  
+
 
 });
