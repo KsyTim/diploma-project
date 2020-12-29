@@ -223,11 +223,20 @@ $(document).ready(function () {
   $(function () {
 
     $('.page-up-arrow').on('click', function (e) {
-      $('html,body').stop().animate({ scrollTop: $('#page-up').offset().top }, 3000);
+      $('html,body').stop().animate({ scrollTop: 0}, 3000);
       e.preventDefault();
     });
 
-  });
+    $(document).scroll(function() {
+        var windowHeight = $(this).scrollTop();
+        if (windowHeight > 200) {
+            $('.page-up-arrow').removeClass('page-up-arrow_hidden');
+        } else {
+            $('.page-up-arrow').addClass('page-up-arrow_hidden');
+        }
+    });
+
+    });
 
   //hide extra text using '...' at the end of block 
   // for(i=0; i<5; i++){
