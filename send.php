@@ -41,8 +41,7 @@ function sendMessage($title,$body){
 
         // Настройки вашей почты
         $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-        $mail->Username   = 'kseniia.timoshenko.0220@gmail.com'; // Логин на почте
-        $mail->Password   = '@choOl55'; // Пароль на почте
+        $mail->Username   = 'kseniia.timoshenko.0220@gmail.com';
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
         $mail->setFrom('kseniia.timoshenko.0220@gmail.com', 'Kseniia Timoshenko'); // Адрес самой почты и имя отправителя
